@@ -1,4 +1,4 @@
-\documentclass[aps,prd,12pt,superscriptaddress,showpacs,showkeys,longbibliography,reprint]{revtex4-1}
+\documentclass[aps,prd,12pt,superscriptaddress,showpacs,showkeys,longbibliography,reprint,nofootinbib]{revtex4-1}
 \usepackage{calrsfs} 
 \usepackage{amsmath,amsthm,latexsym,amssymb,amsfonts}
 \usepackage{xcolor}
@@ -35,7 +35,7 @@
 %------------------
 \begin{document}
 
-\title{Five Dimensional Kaluza--Klein Cosmology in Lovelock--Cartan Theory}
+\title{Five-Dimensional Kaluza--Klein Cosmology in Lovelock--Cartan Theory}
 
 \author{Oscar \surname{Castillo-Felisola}}
 \email{o.castillo.felisola@gmail.com}
@@ -43,6 +43,7 @@
 \affiliation{\CCTVal.}
 
 \author{Cristobal \surname{Corral}}
+\email{cristobal.corral@usm.cl}
 \affiliation{\UTFSM.}
 \affiliation{\CCTVal.}
 
@@ -55,7 +56,7 @@
 
 %% --------- Abstract
 \begin{abstract}
- We study the Kaluza-Klein dimensional reduction of an $N$ dimensional Riemann--Cartan manifold when the compact section is $S^1$. First, we focus on the details of dimensional reduction in the presence of torsion to then study the particular Einstein--Cartan theory with the Gauss--Bonnet term in five dimensions. We look for the general cosmological solution of the Friedman-Robertson-Walker familly in the four-manifold to interpret the remaining fields. The model, treated in five dimensional vacuum, presents torsion both in the reduced manifold as well as in the compact section, manifest as a non-vanishing four dimensional matter field that adds to the effective energy density and pressure. This allows the model to present expanding periods as well as contracting universes, and a radius of the compact section that it asymtotes zero in some solutions. 
+ We study the Kaluza--Klein dimensional reduction of the Lovelock--Cartan theory on a $N$-dimensional Riemann--Cartan manifold, where the compact manifold has $S^1$ topology. First, we focus on the dimensional reduction in presence of torsion, to proceed with the Lovelock--Cartan theory in five dimensions. We find cosmological solutions of the Friedman--Robertson--Walker class for the dimensionally reduced theory. In the five-dimensional vacuum, this theory allows a nontrivial torsion in contrast to the Einstein--Cartan theory. After the dimensional reduction is performed, the torsional degrees of freedom induce a nonvanishing energy-momentum tensor in four dimensions, which behaves as a perfect fluid. Cosmological solutions describing accelerated expansion phases as well as contracting solutions are found. The model shows a dynamical compactification of the extra dimension in some regions of the parameter space. 
 \end{abstract}
 
 %% \pacs{02.40.Ma,04.50.Kd,04.90.+e}
@@ -65,41 +66,59 @@
 \maketitle
 
 \section{Introduction}
-The geometric theory of gravity, General Relativity (GR), has been highly successful in describing the physics at large scales. Two major predictions were recently confirmed in one experiment that invoque two of the most fascinating conepts that this theory developed: the propagation of ripples of spacetime, gravitational waves, originated by the merge of two black holes where detected by the LIGO collaboration \cite{Abbott:2016blz} confirming the existence of both, astrophysical balck holes as well as the unprecedented nature of the signal detected. With this, we can rely in the geometric nature of this interaction. At the galactic scale, the gravitational lensing produced by the local distribution of energy and matter suggest the presence of a kind of matter that is not seen through telescopes. This abundance of matter in the galaxy is also compatible with the velocity profyle of stars at the outer regions of it and is needed to reach the current state of structures formation. This matter would interact mostly, if not only, through gravity \cite{Sofue:2000jx}. At the cosmic scale, observatinal evidence points out an accelerated current state of the Universe \cite{Riess:1998cb}. Such a behaviour needs the existence of a form of vacuum energy of exotic nature to give account of the accelerated expansion. This is evidence of unknown physics, and it has been the motivation for looking for new gravitational degrees of freedom beyond Einsten's GR. Among the familly of extended gravity theories, higher dimensional gravity can give us a clue to explore the manifestation of new degrees of freedom as material fields of certain class. Along this lines is that we consider here an extended model of gravity given by the so called Lovelock action~\cite{Lovelock:1971yv}. 
-The Einstein--Hilbert action with cosmological constant is the unique action in four dimensions that yields second order field equations for the metric. In higher dimensions, however, this does not remains true. A particular combination of squared terms in the curvature can be added to the gravitational action to give rise a second order system for the metric with no ghosts. The particular quadratic term is called Gauss--Bonnet term, and in $N$ dimensions reads
+
+%The theory of General Relativity (GR) has been proven to be one of the most successful description of gravity nowadays. In this framework, the gravitational interaction is understood as the geometrical manifestation of the spacetime. 
+The experimental status of General Relativity (GR), regarding the solar system tests~\cite{Will:2014kxa} and the detection of gravitational waves by the LIGO collaboration~\cite{Abbott:2016blz}, have settled GR as one of the most accepted theories of gravity so far. However, despite these goals, the difficulties on finding out a quantum theory of gravitation, has driven the community to think that GR is not the ultimate gravitational theory. 
+
+At the galactic scale, on the one hand, the gravitational lensing produced by the local distribution of energy and matter, suggests the presence of an exotic form of matter, which have not been seen by the current light-based telescopes~\cite{Sofue:2000jx}. Such an abundance in the galaxy, is also compatible with the velocity profile of the stars at the outter regions of it and is needed to reach the current state of structures formation. This matter would interact mostly (if not only) through gravity~\cite{Sofue:2000jx}. At the cosmic scale, on the other hand, experimental data obtained from the type Ia supernovae observations, indicates that our Universe is passing through a phase of accelerated expansion~\cite{Riess:1998cb}. The latter experimental fact suggests the existence of an exotic form of energy in order to generate such an observed behaviour. 
+
+The shortcomings of GR on describing these manifestations of new physics, have been taken as the main motivation to look for new gravitational degrees of freedom beyond GR. Among the families of possible extensions, higher dimensional gravity could shed some lights on the nature of these new degrees of freedom, appearing as material fields within the dimensionally reduced theory. For instance, as it was shown in the early works of T. Kaluza and O. Klein, the existence of one extra dimension within GR would give rise to an unified picture of gravity and electromagnetism, along with a spectrum of new heavy particles~\cite{Kaluza:1921tu,*Klein:1926tv}. This fact opened the posibility of a geometrical understanding of interactions, where the gauge group arise as a consequence of the topology of the spatial compact manifold in a higher dimensional spacetime, while the gauge fields arise through the dimensional reduction. Even though the original model have not reached a realistic phenomenology so far, the idea of higher dimensions has been taken into account by string theory~\cite{Green:1987sp,*Green:1987mn} and by ADD~\cite{ArkaniHamed:1998rs,*Antoniadis:1998ig} and RS~\cite{Randall:1999ee,*Randall:1999vf} models, as an attempt of unification and as a solution to the hierarchy problem, respectively.
+
+It is well-known that, in four dimensions, the Einstein--Hilbert action with cosmological constant is the unique theory which leads to second order field equations for the metric. In higher dimensions, however, this is no longer true. A particular combination of squared terms in the curvature can be added to the gravitational action, giving rise to second order field equations for the metric. The most general theory in arbitrary dimensions, which preserves the same features of the four dimensional Einstein--Hilbert action with cosmological constant, is described by the Lanczos--Lovelock action~\cite{Lanczos:1938sf,Lovelock:1971yv}. Such a theory, possesses no ghosts~\cite{Zumino:1985dp} and it has the same degrees of freedom as the Einstein--Hilbert Lagrangian in arbitrary dimensions~\cite{Henneaux:1990au}. It is endowed with the so-called Gauss--Bonnet term which, in $N$-dimensions, reads as
 \begin{equation}\label{GB}
   \mathcal{L}_{GB}=\text{d}^N \!x \,\sqrt{-g}\left(\tilde{R}^2-4\tilde{R}_{\mu\nu}\tilde{R}^{\mu\nu}+\tilde{R}_{\alpha\beta\mu\nu}
   \tilde{R}^{\alpha\beta\mu\nu}\right),
 \end{equation}
-where $\tilde{R}_{\alpha\beta\mu\nu}$ is the Riemannian curvature of a manifold with metric $g_{\mu\nu}$ and $g$ its determinant. $\tilde{R}_{\mu\nu}$ and $\tilde{R}$ are the Ricci tensor and Ricci scalar built with the curvature.
+where $\tilde{R}_{\alpha\beta\mu\nu}$ is the Riemannian curvature of a manifold with metric $g_{\mu\nu}$ and $g$ its determinant. $\tilde{R}_{\mu\nu}$ and $\tilde{R}$ are the Ricci tensor and Ricci scalar, respectively, built up by means of the Riemannian curvature.
 
-Written in four dimensions, Eq.~\eqref{GB} adds no dynamics to the metric, since it represents a topological invariant proportional to the Euler characteristic and therefore can always be written locally as a boundary term, while in lower dimensions vanishes identically. Is then natural to extend gravitational Lagrangians by dimensional continuation of Euler densities to build a general theory for a metric in arbitrary dimensions, while keeping the two important features of Einstein's General Relativity just mentioned: the absence of ghosts and second order field equations. These family of Lagrangians for gravity where introduced by Lovelock and bear his name. It can be built in arbitrary dimensions as a linear combination of dimensionally continued topological invariants. Equivalently, the previous Lagrangian can be written in exterior forms, that provide shorter expressions together with a natural framework for further generalizations, in $N$ dimensions reads
+In four dimensions, the Gauss--Bonnet term~\eqref{GB} adds no dynamics to the metric, since it represents a topological invariant proportional to the Euler characteristic class, which can be written locally as a boundary term. In dimensions higher than four, however, the Gauss--Bonnet term does contribute to the field equations, while preserving the same features of GR. Equivalently, the previous $N$-dimensional Lagrangian can be written in exterior forms as
 \begin{equation}\label{GB2}
 \mathcal{L}_{GB} = \epsilon_{a_1...a_N} \tilde{R}^{a_1a_2}\wedge\tilde{R}^{a_3a_4}\wedge e^{a_5}\wedge...\wedge e^{a_N}.
 \end{equation}
-This Lagrangian was also identified as the low energy correction for a spin two field in string theory~\cite{Zwiebach:1985uq}. Thus, the consideration of further Lovelock terms in a higher dimensional manifold can be interpreted as semiclassical corrections of a gravity action.
-The higher dimensional scenario seems to be a natural framework for unification. Early in the last century, it was realized by T. Kaluza and developed by O. Klein, that the existence of one extra direction in Einstein geometric theory of gravity would give rise a unified picture of gravity and electromagnetism together with a spectrum of new heavy particles~\cite{Kaluza:1921tu,*Klein:1926tv}. This opened the posibility of a geometrical understanding of interactions given by non-Abelian gauge groups as a concequence of the topology of a spatial compact section in a higher dimensional spacetime. Eventhough the original model, and further developments have not yet reached a realistic phenomenology, it is clear that this possibility of unification of internal and spacetimes symmetries, together with a material manifestation of geometric degrees of freedom provides a fruitful arena for looking for clues of unity among the interactions. The compactification of higher Lovelock terms has been considered \cite{MuellerHoissen:1985mm,MuellerHoissen:1989yv} and its consequences in cosmology in \cite{MuellerHoissen:1985ij,Deruelle:1986iv,Deruelle:1989fj}. In the Riemannian five dimensional theory, exact wormholes solutions have been found in vacuum \cite{Dotti:2006cp,Dotti:2007az}, and suported by non-exotic matter, making the sign of the Gauss-Bonnet coupling the source of exotic behaviour \cite{Mehdizadeh:2015jra}, higher order Lovelock models \cite{Mehdizadeh:2015dta}, as well as in higher order compactified Lovelock theories with torsion \cite{Canfora:2008ka} also have these solutions. Classically, wormholes must be supported by a kind of phantom energy, compatible with the cosmological hypothesis. We see their theoretical existence in these extended models as a good omen for the search of new degrees of freedom that could provide explanation for the exotic matter-energy abundance in the Universe. \\
-Torsional degrees of freedom, on the other hand, as a further feature of spacetime had a \textit{renaissance} with the works of D. W. Sciama and T. Kibble \cite{Kibble:1961ba} in Poincar\'e gauge theory. In that framework, spacetime torsion arises naturally as the field strength of a gauge connection for the Poincar\'e group (see \cite{Hehl:1976kj,Blagojevic:2002du} for a complete review). The pose of gravity as a gauge theory has major benefits in the problem of a unifyied picture for interactions since it allows it to interpret it as arising by means of a localization procedure, where spacetime is a Riemann-Cartan manifold. In this context, it has been shown that torsional functions produce an accelerating profyle compatible with the current state of the Universe \cite{Shie:2008ms}, as well as non-minimal coupling of Euler forms in Riemann--Cartan spacetimes allow torsion to behave as matter of exotic characteristics \cite{Toloza:2013wi} customary for expansion.
-It becomes essential to understand Kaluza--Klein's ideas in the presence of torsion. Work on the subject reports the phenomenology of extra dimensional torsion \cite{Kalinowski:1980da}, metric dependent torsional models of extra dimensions \cite{Shankar:2012vd} and its consequences in cosmology \cite{Chen:2009ep}, compatification of higher dimensional Brans--Dicke models with torsion \cite{German:1993bq}. Torsion free solutions where found in \cite{Aros:2007nn} for models in first order compactified gravity.\\
-Eventhough at the macroscopic scale, spacetime seems to lack torsion, there is no logical constraint to assume it non-existing, as E. Cartan argued, moreover since vacuum predictions of Einstein--Cartan theory hold the experimental tests of General Relativity.\\
-This work is organized as follows: in Sec.~\ref{KK} we discuss the introduction of torsional degrees of freedom compatible with the Kaluza--Klein geometric reasoning, as well as fix our notation and conventions. Sec.~\ref{5EGB} studies the dynamics of the general Lovelock--Cartan action in five-dimensional spacetime and its dimensional reduction. Then, in Sec.~\ref{cosmos} we look for cosmological solutions in the reduced four-dimensional manifold of the Friedmann--Robertson--Walker class, with torsion both in the reduced manifold and as new dynamical fields arising from the compact section taken to be $S^1$. Conslusions and remarks are given next in Sec.~\ref{conclusions}. We also found appropriate to incorporate a number of appendices to make this work a self contained article.
-%_-----------------------------------------------------------------------------------------
+This Lagrangian was also identified as the low energy correction for a spin two field in string theory~\cite{Zwiebach:1985uq}. Thus, the consideration of further Lanczos--Lovelock terms in a higher dimensional manifold can be interpreted as the semiclassical corrections to the gravity action.
+
+The compactification of higher Lanczos--Lovelock terms has been considered in~\cite{MuellerHoissen:1985mm,MuellerHoissen:1989yv} and its consequences in cosmology in Refs.~\cite{MuellerHoissen:1985ij,Deruelle:1986iv,Deruelle:1989fj}. In the Riemannian five-dimensional theory, exact wormholes solutions have been found in vacuum in Refs.~\cite{Dotti:2006cp,Dotti:2007az}. The same kind of solutions were found without exotic matter, making the sign of the Gauss-Bonnet coupling the source of such an exotic behaviour~\cite{Mehdizadeh:2015jra}. These latter solutions were also obtained in higher order Lanczos--Lovelock models~\cite{Mehdizadeh:2015dta}, as well as in the higher order compactified Lanczos--Lovelock theories with torsion~\cite{Canfora:2008ka}. Classically, wormholes must be supported by a kind of phantom energy, compatible with the cosmological hypothesis. Their existence in these extended models, implies the presence of degrees of freedom that could provide an explanation for the exotic matter-energy abundance in the Universe. 
+
+On the other hand, the renaissance of the Riemann--Cartan geometries came through the advent of the pioneer works of Sciama~\cite{Sciama:1962} and Kibble~\cite{Kibble:1961ba} on Poincar\'e gauge theories (see also Refs.~\cite{Hehl:1976kj,Blagojevic:2002du}). In such a framework, the torsion appears as the field strength of translations. %In such a framework, the vielbein is interpreted as the gauge connection of translations and the torsion as its field strength. The formulation of gravity as a gauge theory has major benefits in the problem of a unified picture of interactions, since it allows to interpret it as arising through a localization procedure, where the spacetime is a Riemann--Cartan manifold. 
+%Due to this, several authors have relaxed the torsion-free condition since, as E. Cartan argued, there is no a fundamental reason to assume a torsion-free condition {\it a priori}. 
+Moreover, the vacuum predictions of its simplest formulation --the Einstein--Cartan theory-- holds the experimental tests of GR. The cosmological consequences of non-Riemannian geometries has been widely studied in the literature (for a review, see Ref.~\cite{Puetzfeld:2004yg}). %For instance, the pioneer works of Kopczy\'nski showed how the introduction of a spinning dust, acting as a source of the curvature and torsion, avoids the appearance of cosmological singularities~\cite{Kopczynski:1972,Kopczynski:1973}. In the context of the early evolution of the Universe, the spin density can drive the inflationary phase within the Einstein--Cartan theory, along with the avoidance of singularities~\cite{Gasperini:1986mv}. It has been shown in Ref.~\cite{Shie:2008ms} that torsional degrees of freedom might produce the current phase of accelerated expansion of the Universe. Additionally, the nonminimal coupling of the Euler characteristic form with a scalar field in Riemann--Cartan spacetimes, allows the torsional degrees of freedom to behave as an exotic induced-matter content, customary for the phase of accelerated expansion~\cite{Toloza:2013wi}. 
+
+In the framework of the Kaluza--Klein theories in higher dimensional Riemann--Cartan geometries, phenomenology of the extra dimensional torsion was found in Ref.~\cite{Kalinowski:1980da}, metric dependent torsional models of extra dimensions was studied in~\cite{Shankar:2012vd}, along with its consequences in cosmology~\cite{Chen:2009ep}. Compatification of higher dimensional Brans--Dicke models with torsion was considered in Ref.~\cite{German:1993bq}. Torsion-free black-hole solutions were found in~\cite{Aros:2007nn}, for first order compactified gravity.
+
+In this work, we present a new class of cosmological solutions for the Lovelock--Cartan theory~\cite{Mardones:1990qc} in five dimensions, outside the Chern--Simons point. The geometry is described by the five-dimensional Riemann--Cartan manifold, where the compact manifold is $S^1$ and the four dimensional manifold is described by means of the Friedmann--Robertson--Walker metric. Such a theory implies a nonvanishing torsion in vacuum due to the presence of the Gauss--Bonnet term, in contrast to the five-dimensional Einstein--Cartan theory. After the dimensional reduction is performed, the torsional degrees of freedom adds to the energy density and pressure of the four dimensional matter fields. In some cases, the solutions avoid the appearance of initial singularities and drive the accelerated expansion of the Universe, while the radius of the compact manifold goes to zero.  
+
+This work is organized as follows: In Sec.~\ref{KK} we introduce the torsional degrees of freedom compatible with the Kaluza--Klein geometry, as well as fixing our notation and conventions. In Sec.~\ref{5EGB}, we study the dynamics of the general Lovelock--Cartan action in five-dimensional spacetime and its dimensional reduction. In Sec.~\ref{cosmos}, we look for cosmological solutions in the reduced four-dimensional manifold of the Friedmann--Robertson--Walker class with nontrivial torsion in both: the reduced manifold as well as new dynamical fields arising from the compact manifold taken to be $S^1$. Conclusions and remarks are given in Sec.~\ref{conclusions}. We also incorporate a number of appendices to make this work a self-contained article.
+
 
 \section{Kaluza--Klein Ansatz in Riemann--Cartan Spacetimes\label{KK}}
-Let $M_N$ be a $N$ dimensional differential manifold. Every quantity defined on $M_N$ will wear hats $\hat{x}$. Capital Greek characters (coordinate indices) and capital Latin characters (Lorentz indices) run along the $N$ dimensions, while lower case run in the $(N-1)$ dimensional reduced manifold.\\
-Let $\hat{\omega}^{AB}$ be the spin connection 1-form that describes the affine structure of the manifold and $\hat{e}^A=\hat{e}^{A}_{\ \Gamma}\,\text{d}\hat{x}^\Gamma$ be the vielbein 1-form that defines the metric structure of the same manifold through the relation $\hat{g}_{\Gamma\Delta}=\hat{e}^{A}_{\ \Gamma}\hat{e}^{B}_{\ \Delta}\hat{\eta}_{AB}$. The vielbein is the mapping that relates coordinate indices (Greek characters) with the Lorentz indices (Latin characters). In our convention the flat Lorentzian metric will be $\hat{\eta}_{AB}=\,$diag$\,(-,+,...,+)$, and the $N$ dimensional Levi-Civita symbol $\hat{\epsilon}_{A_1...A_{N-1}}$ is reduced by defining
+
+Let $M_N$ be a $N$-dimensional differential manifold. Every quantity defined on $M_N$ will be denoted by hats $\hat{x}$. Capital Greek characters (coordinate indices) and capital Latin characters (Lorentz indices) run over the $N$ dimensions, while lower case run in the $(N-1)$-dimensional reduced manifold.
+
+Let $\hat{\omega}^{AB}$ be the spin connection 1-form describing the affine structure of the $N$-dimensional manifold and $\hat{e}^A=\hat{e}^{A}_{\ \Gamma}\,\text{d}\hat{x}^\Gamma$ be the vielbein 1-form defining the metric structure of the same manifold through the relation $\hat{g}_{\Gamma\Delta}=\hat{e}^{A}_{\ \Gamma}\hat{e}^{B}_{\ \Delta}\hat{\eta}_{AB}$. The vielbein is the mapping that relates coordinate indices (Greek characters) with the Lorentz indices (Latin characters). In our convention, the flat Lorentzian metric will be $\hat{\eta}_{AB}=\,$diag$\,(-,+,...,+)$, and the $N$-dimensional Levi-Civita symbol $\hat{\epsilon}_{A_1...A_N}$ is reduced by defining
 \begin{align*}
-\epsilon_{a_1...a_{N-1}}\equiv\hat{\epsilon}_{a_1...a_{N-1}N}.
+\hat{\epsilon}_{a_1...a_{N-1}N} \equiv \epsilon_{a_1...a_{N-1}},
 \end{align*} 
-Our convention fixes $\hat{\epsilon}_{01...N}=1$.\\
-Riemannian fields (torsion free) will also be explicited by a tilde, as it was done in Eq.~\eqref{GB} and Eq.~\eqref{GB2} for the curvature.\\
+since the coordinates of $M_N$ run from $0$ to $N-1$. Our convention fixes $\hat{\epsilon}_{01...N}=1$. Hereon, Riemannian fields (torsion-free) will be explicited by a tilde, as it was done in Eqs.~\eqref{GB} and~\eqref{GB2} for the curvature.
+
 Due to the topology of the manifold, we can expand the depenence of the fields on the extra coordinate, $z$, in Fourier series as  
 \begin{align}\label{Fourier}
-\varrho(\hat{x}^\Gamma)&=\sum_n\varrho_{(n)}(x^\gamma)e^{in z}.
+\hat{\varrho}(\hat{x}^\Gamma)&=\sum_n\varrho_{(n)}(x)e^{in z},
 \end{align}
-For the rest of the paper, we will focus in the $n=0$ mode of the expasion, also refered to as the low energy sector.
+where $x$ denotes the coordinates of the $(N-1)$-manifold, collectively. Henceforth, we will focus in the $n=0$ mode of the expasion, also refered to as the low energy sector.
+
 \subsection{Metric and affine structure}
-The Kaluza-Klein (KK) ansatz for the metric lies on the premise that the compact section of $M_N$ is orthogonal to the rest of the manifold at each point. This leads to the conclusion that the metric has the following structure
+
+The Kaluza--Klein (KK) ansatz for the metric lies on the premise that the compact manifold of $M_N$ is orthogonal to the rest of the manifold at each point. This leads to the following metric structure
 \begin{equation}
   \hat{g}_{\Gamma\Delta} =
   \begin{pmatrix}
@@ -120,8 +139,7 @@ and its inverse
     -A^{\delta} & \phi^{-1}+A^2
   \end{pmatrix}.
 \end{equation}
-It introduces a scalar field $\phi$ and a vector field $A_\mu$ as new gravitational degrees of freedom materialized in the reduced manifold.
-The vielbein that keeps this structure for the metric has the following form
+It introduces a scalar field $\phi$ and a vector field $A_\mu$ as new gravitational degrees of freedom, materialized in the reduced manifold. The vielbein which holds this structure for the metric has the following form
 \begin{equation}
   \label{Dvielbein}
   \hat{e}^A_{\ \ \Gamma} =
@@ -135,7 +153,7 @@ The vielbein that keeps this structure for the metric has the following form
     \sqrt{\phi}A_\gamma & \sqrt{\phi}
   \end{pmatrix},
 \end{equation}
-and its inverse, $\hat{E}_A^{\ \ \Gamma}$ defined such that $\hat{E}_A^{\ \ \Gamma}\hat{e}^A_{\ \ \Delta}=\delta^\Gamma_{\Delta}$, read
+and its inverse, $\hat{E}_A^{\ \ \Gamma}$, defined such that $\hat{E}_A^{\ \ \Gamma}\hat{e}^A_{\ \ \Delta}=\delta^\Gamma_{\Delta}$, reads
 \begin{equation}
   \label{Dinversevielbein}
   \hat{E}_A^{\ \ \Gamma} =
@@ -149,61 +167,55 @@ and its inverse, $\hat{E}_A^{\ \ \Gamma}$ defined such that $\hat{E}_A^{\ \ \Gam
     -A_a & \sqrt{\phi}^{-1}
   \end{pmatrix},
 \end{equation}
-and it shows that the compact section $S^1$ has its own tangent space $T_pS^1$ at each point $p\in M_N$, and is independent to $T_pM_{N-1}$ in the sense that they do not mix. It seems reasonable to think that if we want two manifolds to be orthogonal to one another, they will not mix vectors after the tangent mapping.\\
-The basis of vielbeins is defined modulo Lorentz transformations. Any transformed basis 
-$
-\hat{e}^{A\prime}=\hat{\Lambda}^A_{\ B}\hat{e}^B,
-$
-where $\hat{\Lambda}$ is a Lorentz matrix, is as suitable as $\hat{e}^A$, and therefore share the structure in Eq.~\eqref{Dvielbein}. The Lorentz transformations are then reduced by this fact, imposing over the Loretnz matrix 
-$\hat{\Lambda}^a_{\ N}=0.
-$
+and it shows that the compact manifold $S^1$ has its own tangent space, $T_pS^1$, at each point $p\in M_N$, and is independent to $T_pM_{N-1}$ in the sense that they do not mix. It seems reasonable to think that if we want two manifolds to be orthogonal to one another, they will not mix vectors after the tangent mapping.
 
-%_-----------------------------------------------------------------------------------------
+The vielbeins are defined modulo Lorentz transformations. Any transformed basis $\hat{e}^{\prime A}=\hat{\Lambda}^A_{\ B}\,\hat{e}^B$,
+where $\hat{\Lambda}$ is a Lorentz matrix, is as suitable as $\hat{e}^A$, and therefore share the structure in Eq.~\eqref{Dvielbein}. The Lorentz transformations are then reduced by this fact, imposing the condition $\hat{\Lambda}^a_{\ N}=0$.
 
-
-A Riemannian connection compatible with a $N$ dimensional vielbein, Eq.~\eqref{Dvielbein}, is built under the premise that $\mbox{d}\hat{e}^A + \hat{\tilde{\omega}}^{AB} \wedge \hat{e}^A = 0$. Thus, we find
+A Riemannian connection compatible with the $N$-dimensional vielbein~\eqref{Dvielbein}, is built under the premise that $\mbox{d}\hat{e}^A + \hat{\tilde{\omega}}^{AB} \wedge \hat{e}^A = 0$. Thus, we find
 \begin{align}
   \label{DRiemannconnection}
   \hat{\tilde{\omega}}^{ab}&=\tilde{\omega}^{ab}-\frac{1}{2}\sqrt{\phi}F^{ab}\hat{e}^N,\\
   \hat{\tilde{\omega}}^{Na}&=\frac{1}{2}\sqrt{\phi}F^a_{\ \ l}e^l+\frac{1}{2}\partial^a\ln\phi\hat{e}^N,
 \end{align}
-where $\tilde{\omega}^{ab}$ is the Riemannian spin connection of the reduced manifold. The construction of a theory for a spacetime with spin connection \eqref{DRiemannconnection} leads to the original KK theory. It gives rise the usual $U(1)$-invairant field strength, 
+where $\tilde{\omega}^{ab}$ is the Riemannian spin connection of the reduced manifold. The construction of the five-dimensional Einstein--Hilbert action by means of the spin connection~\eqref{DRiemannconnection}, leads to the original KK theory. After the dimensional reduction is performed, the usual $U(1)$-invariant gauge field strength, 
 \begin{align*}
 F=\text{d}A=\frac{1}{2}F_{ab}\, e^a\wedge e^b,
 \end{align*} 
-non-minimally coupled to the scalar field.\\
-Nevertheless, $M_N$ is in this case, not entirely described by $\hat{\tilde{\omega}}^{AB}$, but by a more general spin connection, independent of the metric degrees of freedom (see Appendix \ref{Riemann-Cartan} for details). We can assume a general connection 1-form of the same type (regarding its $M_{N-1}\times S^1$ decomposition) as in eq.~\eqref{DRiemannconnection}. Thus
+appears nonminimally coupled to the scalar field.
+
+Nevertheless, in a Riemann--Cartan geometry $M_N$ is not entirely described by $\hat{\tilde{\omega}}^{AB}$, but by a more general spin connection, independent of the metric degrees of freedom (see Appendix \ref{Riemann-Cartan} for details). We can assume a general connection 1-form of the same type (regarding its $M_{N-1}\times S^1$ decomposition) as in Eq.~\eqref{DRiemannconnection}. Thus
 the most general spin connection on $M_N$ compatible with the KK decomposition is given by 
 \begin{equation}\label{Nconnection}
   \hat{\omega}^{AB} \equiv
   \begin{pmatrix}
     \omega^{ab}+\alpha^{ab}\hat{e}^N&\beta^a+\gamma^a\hat{e}^N\\
     -\beta^b-\gamma^b\hat{e}^N&0
-  \end{pmatrix}.
+  \end{pmatrix},
 \end{equation}
-It contemplates the torsional degrees of freedom appart of the usual metric ones. 
-The decomposition \eqref{Nconnection} add new independent fields into the picture. Here $\alpha^{ab}$ is a $0$-form, $\beta^a$ a vector valued $1$-form and $\gamma^a$ a $0$-form that admit the Fourier expansion \eqref{Fourier} regarding their dependence on the extra dimension. Here, as we pointed out earlier, we will take the $0$-mode of such an expansion.
+which contemplates the torsional degrees of freedom appart from the usual metric ones. 
 
-%_-----------------------------------------------------------------------------------------
+The decomposition \eqref{Nconnection} adds new metric-independent fields into the reduced theory, after the dimensional reduction is performed. For instance, $\alpha^{ab}$ is a rank-2 Lorentz-valued antisymmetric $0$-form, which adds a new spin-$1$ field into the matter content of the reduced theory. The $\beta^a$ piece of the extra dimensional spin connection, is a Lorentz-valued vector $1$-form which adds a spin-$2$, spin-$1$ and a spin-$0$ fields into the reduced theory. The last piece, $\gamma^a$, is a Lorentz-valued vector $0$-form, which adds a new spin-$1$ field into the picture. All these new fields admit the Fourier expansion in Eq.~\eqref{Fourier}, regarding their dependence on the extra dimension. Here, as was pointed out earlier, we will consider only the zero mode of such an expansion.
+
 
 \subsection{Curvature and torsion}
-Using the definition of curvature
-$\hat{R}^{AB}=\mbox{d}\hat{\omega}^{AB}+\hat{\omega}^A_{\ \ C}\wedge\hat{\omega}^{CB}$,
-we find
+
+The $N$-dimensional Lorentz curvature and torsion are given by the Cartan structure equations
+\begin{align}
+\label{curvadef}
+\hat{R}^{AB} &= \mbox{d}\hat{\omega}^{AB}+\hat{\omega}^A_{\ \ C}\wedge\hat{\omega}^{CB}, \\
+\label{tordef}
+\hat{T}^A &= \hat{\mbox{D}}\hat{e}^A=\mbox{d}\hat{e}^A+\hat{\omega}^A_{\ \ B}\wedge\hat{e}^B,
+\end{align}
+respectively. Using the definition of curvature in Eq.~\eqref{curvadef}, along with the KK ansatz for the spin connection~\eqref{Nconnection}, we find
 \begin{align}\label{R1}
   \hat{R}^{ab}&=R^{ab}+\sqrt{\phi}\alpha^{ab}F-\beta^a\wedge\beta^b\notag\\
   &+\left(\mbox{D}\alpha^{ab}+\frac{1}{2}\alpha^{ab}\mbox{d}\ln\phi-2\beta^{[a}\gamma^{b]}\right)\wedge\hat{e}^N,\\
   \label{R2}
-  \hat{R}^{aN}&=\left(\mbox{D}\beta^a+\sqrt{\phi}\gamma^a F\right)\notag\\
-  &-\left(\alpha^a_{\ b}\beta^b-\mbox{D}\gamma^a-\frac{1}{2}\gamma^a\mbox{d}\ln\phi\right)\wedge\hat{e}^N.
+  \hat{R}^{Na}&=-\left(\mbox{D}\beta^a+\sqrt{\phi}\gamma^a F\right)\notag\\
+  &+\left(\alpha^a_{\ b}\beta^b-\mbox{D}\gamma^a-\frac{1}{2}\gamma^a\mbox{d}\ln\phi\right)\wedge\hat{e}^N.
 \end{align}
-where we have used the fact that
-$
-  \mbox{d}\hat{e}^N=\frac{1}{2}\mbox{d}\ln\phi\wedge\hat{e}^N+\sqrt{\phi}F.
-$
-Similarly from the definition of torsion
-$\hat{T}^A = \hat{\mbox{D}}\hat{e}^A=\mbox{d}\hat{e}^A+\hat{\omega}^A_{\ \ B}\wedge\hat{e}^B$
-we find its distinctive parts to be
+where we have used the fact that $\mbox{d}\hat{e}^N=\frac{1}{2}\mbox{d}\ln\phi\wedge\hat{e}^N+\sqrt{\phi}F$. Similarly from the definition of torsion in Eq.~\eqref{tordef}, we find its distinctive parts to be
 \begin{align}\label{T1}
   \hat{T}^a &= T^a+\left(\beta^a-\alpha^a_{\ \ b}e^b\right)\wedge\hat{e}^N,\\
   \label{T2}
@@ -212,29 +224,27 @@ we find its distinctive parts to be
 
 \subsubsection{Bianchi identities}
 
-Considering the Bianchi identities of the KK structure described above, we find relevant information about the new fields. Taking the exterior covariant derivative of the field strengths
-$\hat{R}$ and $\hat{T}$, the Bianchi identities are
+Considering the Bianchi identities for the KK structure described above, we find relevant information about the new fields. Taking the exterior covariant derivative over the $N$-dimensional curvature and torsion, the Bianchi identities are
 \begin{align*}
-  \hat{\text{D}}\hat{R}^{AB} &= 0, & \hat{\text{D}}\hat{T}^A &= \hat{R}^A_{\ \ B}\wedge\hat{e}^B.
+  \hat{\text{D}}\hat{R}^{AB} &= 0 &\mbox{and}& &\hat{\text{D}}\hat{T}^A &= \hat{R}^A_{\ \ B}\wedge\hat{e}^B.
 \end{align*}
-A careful decomposition of the first one in its distinctive parts, gives the Bianchi identity for the curvature of the reduced spacetime together with the second derivative rules
+A careful decomposition of the first one into its distinctive parts, gives the Bianchi identity for the curvature of the reduced spacetime, together with the second derivative rules
 \begin{align*}
   \text{D}R^{ab} &=0, & \text{D}\mbox{D}\alpha^{ab} &=R^a_{\ \ l}\alpha^{lb}+R^b_{\ \ l}\alpha^{al},\\
   \text{D}\text{D}\beta^a &= R^a_{\ \ b}\beta^{b}, & \text{D}\text{D}\gamma^a &= R^a_{\ \ b}\gamma^{b}.
 \end{align*}
-This is taken as proof of the tensorial condition of these new fields. While consideration of the second one gives nothing but its equivalent for the manifold $M_{N-1}$, this is
+Considering the second Bianchi identity, gives nothing but its equivalent for the manifold $M_{N-1}$, this is
 \begin{equation*}
   \mbox{D}T^a=R^a_{\ \ b}\wedge e^b.
 \end{equation*}
 
+This is taken as a proof of the tensorial nature of these new fields under the $4$-dimensional Lorentz transformations, which have been already discussed in Sec.~\ref{KK}.
 
+\section{Five-Dimensional Lovelock--Cartan Reduction\label{5EGB}}
 
+The most general theory requiring the Lagrangian to be (i)~an invariant $N$-form under local Lorentz transformations; (ii)~a local polynomial of the vielbein, the Lorentz connection and their exterior derivatives; (iii)~constructed without the Hodge dual, is the so-called Lovelock--Cartan theory of gravity~\cite{Mardones:1990qc}. This theory is the natural generalization of the Lanczos--Lovelock action, when torsional degrees of freedom are present. 
 
-
-%_-----------------------------------------------------------------------------------------
-
-\section{Five Dimensional Einstein--Gauss--Bonnet Reduction\label{5EGB}}
-We will work in this section, the dimensional reduction of a gravitational Lagrangian that includes quadratic terms in the curvature, namely the Gauss--Bonnet term. The action is given by
+In five dimensions, the action principle of such a theory is given by  
 \begin{widetext}
   \begin{equation}\label{action5EGB}
     I=\int\limits_{M_5}\hat{\epsilon}_{ABCDE}\Big(\frac{\alpha_0}{5}\hat{e}^A\wedge\hat{e}^B\wedge\hat{e}^C\wedge
@@ -243,7 +253,7 @@ We will work in this section, the dimensional reduction of a gravitational Lagra
     +\alpha_2\hat{R}^{AB}\wedge\hat{R}^{CD}
     \wedge\hat{e}^E\Big),
   \end{equation}
-where $\alpha_0$, $\alpha_1$ and $\alpha_2$ are coupling constants. Variations with respect to the vielbein and spin connection give the equations
+where $\alpha_0$, $\alpha_1$ and $\alpha_2$ are dimensionful coupling constants. Variation with respect to the $5$-dimensional vielbein and spin connection give the equations
   \begin{align}\label{delta e}
     \hat{\epsilon}_{ABCDE}\Big(\alpha_0\hat{e}^A\wedge\hat{e}^B\wedge\hat{e}^C\wedge\hat{e}^D
     +\alpha_1\hat{R}^{AB}\wedge\hat{e}^C\wedge\hat{e}^D
@@ -252,27 +262,32 @@ where $\alpha_0$, $\alpha_1$ and $\alpha_2$ are coupling constants. Variations w
     \hat{\epsilon}_{ABCDE}\Big(\alpha_1\hat{e}^C\wedge\hat{e}^D+
     2\alpha_2\hat{R}^{CD}\Big)\wedge\hat{T}^E&=0,
   \end{align}
-  respectively. 
+respectively.
 \end{widetext}
-In this work, we will focus on the general case when
+
+In general, the Lovelock--Cartan theory in five dimensions allows the torsional term~\cite{Mardones:1990qc},
+\begin{align}
+\label{boundary}
+\mathcal{L} \propto \hat{T}_A\wedge \hat{R}^A_{\ B}\wedge\hat{e}^B,
+\end{align}
+which can be written as a boundary term proportional to the Nieh-Yan invariant, adding no dynamics to the field equations. The action principle~\eqref{action5EGB}, along with the torsional term~\eqref{boundary}, describes the general Lovelock--Cartan theory in five dimensions.
+
+In this work, we will focus on the region in the parameter space where
 \begin{equation}\label{delta}
 \Delta\equiv\alpha_1^2-4\alpha_0\alpha_2\neq 0.
 \end{equation}
-Otherwise, the Lagrangian becomes a gauge invariant Lagrangian for a larger group, namely the $AdS_5$ group, and is recognized as its Chern--Simons form \cite{Zanelli:2005sa}, \cite{Troncoso:1999pk}. In general, Lovelock--Cartan (LC) theory allows the torsional term
-\begin{align*}
-\mathcal{L}_{T}\sim\hat{R}_{AB}\wedge\hat{T}^A\wedge\hat{e}^B,
-\end{align*}
-that in five dimensions is a boundary term proportional to the Nieh-Yan invariant, thus it does not participate in the dynamics. Action \eqref{action5EGB} is the general LC theory in five dimensions.\\
-In terms of the KK ansatz presented in previous sections, the equations of motion can be decomposed in to its distinctive parts. Eq.~\eqref{delta e} leads to the following set
+This condition place us outside the Chern--Simons point since, otherwise, the field equations~\eqref{delta e} and~\eqref{delta w} remain invariant under $AdS_5$ gauge transformations, while the action principle~\eqref{action5EGB} can be recognized as its Chern--Simons form~\cite{Zanelli:2005sa,Troncoso:1999pk}. 
+
+In terms of the KK ansatz presented in previous sections, the field equations can be decomposed into its distinctive parts. The equation of motion for the five-dimensional vielbein~\eqref{delta e}, leads to the following set of reduced field equations
 \begin{align}\label{equation}
-\epsilon_{abcd}\Big[\alpha_0 e^a\wedge e^b\wedge e^c+\frac{1}{2}\alpha_1\left(M^{ab}-L^a\wedge e^b\right)\wedge e^c&\notag\\
--\alpha_2\left(L^a\wedge M^{bc}+K^a\wedge N^{bc}\right)\Big]&=0,\\
-\epsilon_{abcd}K^a\wedge\left(\alpha_1e^b\wedge e^c+2\alpha_2M^{bc}\right)&=0,\\
+\epsilon_{abcd}\Big[\alpha_0 e^b\wedge e^c\wedge e^d + \frac{1}{2}\alpha_1\left(M^{bc}-L^b\wedge e^c\right)\wedge e^d&\notag\\
+-\alpha_2\left(L^b\wedge M^{cd} + K^b\wedge N^{cd}\right)\Big]&=0,\\
+\epsilon_{abcd}K^b\wedge\left(\alpha_1e^c\wedge e^d + 2\alpha_2M^{cd}\right)&=0,\\
 \epsilon_{abcd}\big(\alpha_0 e^a\wedge e^b\wedge e^c\wedge e^d&\notag\\
-+\alpha_1M^{ab}\wedge\wedge e^c\wedge e^d+\alpha_2M^{ab}\wedge M^{cd}\big)&=0,\\
++\alpha_1M^{ab}\wedge e^c\wedge e^d+\alpha_2M^{ab}\wedge M^{cd}\big)&=0,\\
 \epsilon_{abcd}\left(\alpha_1N^{ab}\wedge e^c\wedge e^d+2\alpha_2N^{ab}M^{cd}\right)&=0,
 \end{align}
-while Eq.~\eqref{delta w} gives
+while the equation of motion for the spin connection~\eqref{delta w} gives
 \begin{align}
 \epsilon_{abcd}\Big[\alpha_1\left(e^c\wedge e^d\wedge Z-2e^c\wedge T^d\right)
 +2\alpha_2\Big(N^{cd}\wedge W&\notag\\
@@ -280,77 +295,86 @@ while Eq.~\eqref{delta w} gives
 +2K^c\wedge V^d\Big)\Big]&=0,\\
 \epsilon_{abcd}\left[\alpha_1e^c\wedge e^ d\wedge W+2\alpha_2\left(M^{cd}\wedge W+2K^c\wedge T^d\right)\right]&=0,\\
 \epsilon_{abcd}\left(\alpha_1e^b\wedge e^c+2\alpha_2M^{bc}\right)\wedge T^d&=0,\\
-\epsilon_{abcd}\left[\alpha_1e^b\wedge e^c V^d+2\alpha_2\Big(M^{bc}\wedge V^d+N^{bc}\wedge T^d\Big)\right]&=0.
+\epsilon_{abcd}\left[\alpha_1e^b\wedge e^c\wedge V^d+2\alpha_2\Big(M^{bc}\wedge V^d+N^{bc}\wedge T^d\Big)\right]&=0.
 \end{align}
-The fields $M^{ab}$, $N^{ab}$, $L^a$, $K^a$, $W$, $V^a$ and $Z$ are defined through \eqref{R1}, \eqref{R2}, \eqref{T1} and \eqref{T2} such that
+The fields $M^{ab}$, $N^{ab}$, $L^a$, $K^a$, $W$, $V^a$ and $Z$ are defined from the Eq.~\eqref{R1} to~\eqref{T2}, such that
 \begin{align*}
 \hat{R}^{ab}&=M^{ab}+N^{ab}\wedge\hat{e}^5, & \hat{R}^{5a}&=K^a+L^a\wedge\hat{e}^5,\\
 \hat{T}^a&=T^a+V^a\wedge\hat{e}^5, & \hat{T}^5&=W+Z\wedge\hat{e}^5.
 \end{align*}
 
 
+\section{Dimensionally Reduced Lovelock--Cartan Cosmology\label{cosmos}}
 
-
-
-%_-----------------------------------------------------------------------------------------
-\section{Dimensionally Reduced EGB Cosmology}\label{cosmos}
 \subsection{Cosmological ansatz}
-We will look for cosmological solutions of the equations of motion. For that, we demand the symmetries assumed by the cosmological principle, namely, isotropy and homogeneity of the fields involve. This is achieved by making the Lie derivative in the direction of the Killing vectors of the symmetries to vanish for each field. Appendix \ref{homotropic} is devoted to the details of how to reach the general ansatz that we present next. The vielbein compatible with the Friedman-Robertson-Walker metric is determined by one function called scale factor $a(t)$,
+
+In order to look for cosmological solutions, we demand the symmetries assumed by the cosmological principle, i.e. isotropy and homogeneity of the involved fields. This can be achieved by considering the Lie derivative of each field, along the Killing vectors which generates the symmetries, to vanish. The Appendix~\ref{homotropic} is devoted to the details of how to reach the general ansatz we are presenting next. The $4$-dimensional vielbein compatible with the Friedman--Robertson--Walker metric is determined only by one function, the so-called scale factor $a(t)$, and their components read
 \begin{align}
   \label{vielbein cosmo}
   e^0&=\mbox{d}t, & e^1&=\frac{a(t)}{\sqrt{1-kr^2}}\mbox{d}r,\\
   e^2&=a(t)r\mbox{d}\theta, & e^3&=a(t)r\sin\varphi\mbox{d}\varphi, 
 \end{align}
-where $k=+1,0,-1$ determines if the spatial section is closed, flat or an open $3$-space respectivelly. The scalar field is a time-dependent function
+where $k=+1,0,-1$ determines the spatial section of the four-dimensional manifold to be closed, flat or open, respectively. 
+
+The scalar field is determined by one time-dependent function, denoted by
 \begin{equation}
   \phi=\phi(t).
 \end{equation}
-On the other hand, the spin connection adds two functions we called $\omega(t)$ and $f(t)$,
+
+On the other hand, the spin connection adds two functions that we called $\omega(t)$ and $f(t)$,
 \begin{align}
   \omega^{0i}&=\omega(t) e^i,\\
   \omega^{12}&=-\frac{\sqrt{1-kr^2}}{a(t)r}e^2-f(t)e^3,\\
   \omega^{13}&=-\frac{\sqrt{1-kr^2}}{a(t)r}e^3+f(t)e^2,\\
   \omega^{23}&=-\frac{\cot\theta}{a(t)r}e^3-f(t)e^1.
 \end{align}
-The non-vanishing components of the spin connection induced by the compact section of the manifold are
+
+The nonvanishing components of the spin connection induced by the compact manifold are
 \begin{align}
   \beta^0=-b(t)e^0,&\ \beta^i=\beta(t)e^i,\\
   \label{gamma cosmo}
   \gamma^0&=-\gamma(t).
 \end{align}
-For this ansatz, the $1$-form $A$ has the form $A_t(t)\text{d}t$, which can be shown to have vanishing field strength $F$. Thus without loss of generality, it can be set to zero by means of a $U(1)$ gauge transformation, or equivalently, a diffeomorphism transformation along the $z$-direction.\\
-The equations of motion for the cosmological ansatz gives a system of differential equations for the time dependent functions defined above. Curvature and torsion for this ansatz can be seen in Appendix \ref{homotropic}. We found that the only non-Riemannian branch demands  $\beta^a=0$. Thus $b(t)=\beta(t)=0$. Otherwise, the system degenerates at the CS point. The final set of equations is the following:
+
+For this ansatz, however, the $1$-form $A$ is $A_t(t)\text{d}t$, which can be shown to have vanishing field strength $F$. Thus, without loss of generality, it can be fixed to zero by means of an $U(1)$ gauge transformation or, equivalently, a diffeomorphism transformation along the $z$-direction.
+
+The equations of motion for the cosmological ansatz give a system of differential equations for the time-dependent functions defined above. Curvature and torsion for this ansatz can be seen in Appendix~\ref{homotropic}. We find that the only non-Riemannian branch demands  $\beta^a=0$. Thus $b(t)=\beta(t)=0$. Otherwise, the system degenerates at the Chern--Simons point. 
+
+The final set of equations is the following:
 \begin{align}
   \label{eqn1}
   h\left[\alpha_1+2\alpha_2\left(\omega^2+\frac{k}{a^2}-f^2\right)\right]+4\alpha_2f\left(\dot{f}+Hf\right)&=0,\\
   2\alpha_0+\alpha_1\left(\dot{\omega}+2\omega^2+\frac{k}{a^2}-f^2\right)\notag\\
   +2\alpha_2\left(\dot{\omega}+\omega^2\right)\left(\omega^2+\frac{k}{a^2}-f^2\right)&=0,\\
-  2\alpha_2\left(\frac{1}{2}\dot{\Phi}+\gamma\right)f\left(\dot{f}+Hf\right)
+  2\alpha_2\left(\frac{\dot{\phi}}{2\phi}+\gamma\right)f\left(\dot{f}+Hf\right)
   +h^2\left(\alpha_1-2\alpha_2\omega\gamma\right)&=0,\\
-  \omega\left(\frac{1}{2}\dot{\Phi}+\gamma\right)+\dot{\gamma}+\frac{1}{2}\gamma\dot{\Phi}-\frac{\alpha_1}{2\alpha_2}&=0,\\
+  \omega\left(\frac{\dot{\phi}}{2\phi}+\gamma\right)+\dot{\gamma}+\frac{\dot{\phi}}{2\phi}\gamma-\frac{\alpha_1}{2\alpha_2}&=0,\\
   \left(\omega^2+\frac{k}{a^2}-f^2\right)\left(\alpha_1-2\alpha_2\omega\gamma\right)-\alpha_1\omega\gamma+2\alpha_0&=0,\\
   \label{eqn2}
   \left(\dot{\omega}+\omega^2\right)\left(\alpha_1-2\alpha_2\omega\gamma\right)-\alpha_1
   \omega\gamma+3\alpha_0-\frac{\alpha^2_1}{4\alpha_2}&=0,
 \end{align}
-where dotted functions stands for its time-derivatives. We have defined for simplicity the functions $h(t)=\omega(t)-H(t)$, where $H=\dot{a}/a$ is the Hubble function, and $\Phi=\ln\phi$.
-
+where dotted functions stand for its time-derivatives. For the sake of simplicity, we have defined $h(t)=\omega(t)-H(t)$, where $H=\dot{a}/a$ is the Hubble function.
 
 \subsection{Solutions}
 
-The system is integrated developing two non-Riemannian branches, one for each value of the parameter $u_\pm$ defenied to be
+The system is integrated out developing two non-Riemannian branches, one for each value of the parameter $u_\pm$ defined to be
 \begin{equation}\label{u}
   u_\pm=\frac{2\alpha_1\pm\sqrt{6\Delta}}{4\alpha_2},
 \end{equation}
-where $\Delta$ was given in Eq.~\eqref{delta}. Eqs.~\eqref{eqn1} to~\eqref{eqn2} reduced to the Riemannian system when \mbox{$f=h=0$} and \mbox{$\gamma=-\dot{\Phi}/2$}. The details of such a model can be seen in Refs.~\cite{Deruelle:1986iv,Deruelle:2003ck,Henriques:1986jw,Ishihara:1986if,Kleidis:1997mu}.
+where $\Delta$ was given in Eq.~\eqref{delta}. The Eqs.~\eqref{eqn1} to~\eqref{eqn2} are reduced to the Riemannian system when \mbox{$f=h=0$} and \mbox{$\gamma=-\dot{\phi}/2\phi$}. The details of such a model can be seen in Refs.~\cite{Deruelle:1986iv,Deruelle:2003ck,Henriques:1986jw,Ishihara:1986if,Kleidis:1997mu}.
 
-Due to Eq.~\eqref{u}, the solutions will be valid in the region of parameter space where $\Delta>0$. The function $\omega(t)$ satisfies the equation $\dot{\omega}+\omega^2+u_{\pm}=0$, that for the three significantly different values of $u_\pm$, has the following solutions
+Due to Eq.~\eqref{u}, the solutions will be valid in the region of parameter space where $\Delta>0$. The function $\omega(t)$ satisfies the equation
+\begin{align}
+\dot{\omega}+\omega^2+u_{\pm} &= 0,
+\end{align}
+which, for the three significantly different values of $u_\pm$, has the following solutions
 \begin{align}
   u_\pm>0&:\omega(t)=-\sqrt{u_\pm}\tan\left[\sqrt{u_\pm}\left(t-t_0\right)\right],\\
   u_\pm=0&:\omega(t)=\left(t-t_0\right)^{-1},\\
   u_\pm<0&:\omega(t)=\sqrt{-u_\pm}\tanh\left[\sqrt{-u_\pm}\left(t-t_0\right)\right],
 \end{align}
-where $t_0$ is an integration constant to be fixed. We relegate the time dependence of the remaining fields to these expressions for $\omega$ and list their explicit time dependence in Appendix~\ref{solutions t}. The solutions read
+where $t_0$ is an integration constant to be fixed. We relegate the time-dependence of the remaining fields to these expressions for $\omega$ and list their explicit time dependence in Appendix~\ref{solutions t}. The solutions read
 \begin{align}
   \gamma(\omega)&=\frac{u_\pm}{\omega},\\
   \phi(\omega)&=\frac{\phi_0\,\omega^2}{\omega^2+u_\pm}\exp\left[\frac{\mp\sqrt{6\Delta}}{4\alpha_2\left(\omega^2+u_\pm\right)}\right],\\
@@ -360,33 +384,36 @@ where $t_0$ is an integration constant to be fixed. We relegate the time depende
 \end{align}
 where we have defined the constant
 \begin{equation*}
-  Y_{\pm}=\mp2\frac{\alpha_1 u_\pm-2\alpha_0}{\sqrt{6\Delta}}=-\frac{3\alpha_1\pm\sqrt{6\Delta}}{6\alpha_2},
+  Y_{\pm} = -\frac{3\alpha_1\pm\sqrt{6\Delta}}{6\alpha_2},
 \end{equation*}
-and where $a_0$ and $\phi_0$ are integration constants.
+and $a_0$ and $\phi_0$ are integration constants.
 
-\subsubsection{Bouncing universes}
-For $u_\pm>0$ the solutions are periodic. In that case, the scale factor starts from a singular point and reach a future one after a time $t_{\text{crunch}}=\pi/\sqrt{u_\pm}$. Depending on the particular sector of parameter space, the solution undergoes an expanding and contracting age that allow it to reach a minimum value without collapsing, to expand again before a big crunch. Otherwise, it reaches a maximum value before collapse. It also shows an inflationary phase at early times when the scale factor grows exponentially.
+\subsubsection{Bouncing solutions}
+
+For $u_\pm>0$ the solutions are periodic. In that case, the scale factor starts from a singular point and reaches a future one after a time $t_{\rm bounce}=\pi/\sqrt{u_\pm}$. Depending on the particular region on the parameter space, the scale factor undergoes an expanding and contracting age, allowing to reach a minimum value without collapsing, to expand again before a big crunch. Otherwise, it reaches a maximum value before its collapse. It also shows an inflationary phase at early times when the scale factor grows exponentially.
 
 
-\subsubsection{Expanding and contracting universes}
-For $u_\pm\leq 0$, depending on the sign of $\alpha_2$ and the $\pm$-sign in $u_\pm$, the scale factor will infinitely expand while the scalar field reach an asymtotic vanishing value for late cosmic times, after a period of expansion. This is interpreted as the late cosmic time behaviour of the radius of the compact spacial section $S^1$, that for this familly of solutions provides a natural explanation for its scale. Otherwise, in contrast to the previous behaviour, the scale factor contracts to an asymtotic vanishing value while the scalar field has no upper bound. In the case of strictly negative $u_\pm$, for either contracting or expanding scale factor, its initial value remains finite, thus the solutions do not present an original singularity. It has been reported that the GB term in a gravitational action can prevent the universe to expand from an initial singularity \cite{Deruelle:1986iv,Henriques:1986jw,Ishihara:1986if}, which is also the case here. 
+\subsubsection{Expanding and contracting solutions}
+
+For $u_\pm\leq 0$, depending on the sign of $\alpha_2$ and the $\pm$-sign in $u_\pm$, the scale factor will infinitely expand while the scalar field reaches an asymtotic vanishing value for late cosmic times, after a period of expansion. This is interpreted as the late time behaviour of the radius of the compact manifold $S^1$, which for this family of solutions provides a natural explanation for its scale. Otherwise, in contrast to the previous behaviour, the scale factor contracts to an asymtotic vanishing value while the scalar field has no upper bound. In the case of strictly negative $u_\pm$, for either contracting or expanding scale factors, their initial values remain finite and the solutions do not present an initial singularity. It has been reported that the GB term in a gravitational action can prevent the universe to expand from an initial singularity \cite{Deruelle:1986iv,Henriques:1986jw,Ishihara:1986if}, which is also the present case. 
 
 \subsubsection{Effective energy density and pressure}
-Eq.~\eqref{equation} take the familiar form
+
+The Eq.~\eqref{equation} can be written, by means of the identity~\eqref{curvature decomp}, in the familiar form
 \begin{align}\label{einstein equation}
-\frac{1}{2}\epsilon_{abcd}\left(\alpha_0e^a\wedge e^b\wedge e^c+\frac{1}{2}\alpha_1\tilde{R}^{ab}\wedge e^c\right)&=\tau^{eff}_d,
+-\frac{1}{2}\epsilon_{abcd}\left(\tilde{R}^{bc} - \frac{\Lambda}{3}\,e^b\wedge e^c\right)e^d &= \kappa_{G}\,\tau^{eff}_a,
 \end{align}
-when we use \eqref{curvature decomp} and define an effective energy-momentum form as
+where $\Lambda \equiv -6\alpha_0/\alpha_1$, $\kappa_{G} \equiv 2/\alpha_1$ and we have defined the effective energy-momentum $3$-form as
 \begin{align}
-\tau_a^{eff}&=\frac{1}{2}\epsilon_{abcd}\bigg[\frac{1}{2}\alpha_1\left(\kappa^b_{\ l}\wedge\kappa^{lc}+\tilde{\text{D}}\kappa^{bc}\right)\wedge e^d\notag\\
+\tau_a^{eff}&= \frac{1}{2}\epsilon_{abcd}\bigg[\frac{1}{2}\alpha_1\left(\kappa^b_{\ l}\wedge\kappa^{lc}+\tilde{\text{D}}\kappa^{bc}\right)\wedge e^d\notag\\
 &+\left(\text{D}\gamma^b+\frac{1}{2}\gamma^b\text{d}\ln\phi\right)\wedge\left(\frac{1}{2}\alpha_1e^c\wedge e^d+\alpha_2R^{cd}\right)\bigg].
 \end{align}
-The contributions of $F$, $\alpha^{ab}$ and $\beta^a$ have not been taken into account since for all practical purposes of this article, they vanish. The left hand side of \eqref{einstein equation} is Eintein's $3$-form, that in components gives Einstein's tensor. We identify the right hand side as an effective energy-momentum form that contemplates the torsional functions and the higher dimensional metric degrees of freedom as part of the gravitating matter of a four dimensional Universe in the form of a perfect fluid. For this energy-momentum form, we identify the energy density $\rho$ and pressure $p$ by
-\begin{align*}
-\tau_0^{eff}&=-\frac{1}{3!}\rho\epsilon_{0ijk}e^i\wedge e^j\wedge e^k,\\
-\tau_i^{eff}&=-\frac{1}{2}p\epsilon_{0ijk}e^0\wedge e^j\wedge e^k.
-\end{align*} 
-Hence
+The contributions of $F$, $\alpha^{ab}$ and $\beta^a$ have not been taken into account since for all practical purposes of this article, they vanish. The left hand side of the Eq.~\eqref{einstein equation} is the Eintein $3$-form, which is dual to the Einstein tensor with cosmological constant in four dimensions. We identify its right hand side as an effective energy-momentum $3$-form, which behaves as a perfect fluid. Such an energy-momentum contains the torsional and the higher dimensional degrees of freedom as part of the gravitating fields in four dimensions. From this, we identify the energy density $\rho$ and the pressure $p$ through
+\begin{align}
+\tau_0^{eff}&=-\frac{1}{3!}\,\rho\,\epsilon_{0ijk}e^i\wedge e^j\wedge e^k,\\
+\tau_i^{eff}&=-\frac{1}{2}\,p\,\epsilon_{0ijk}e^0\wedge e^j\wedge e^k,
+\end{align} 
+where
 \begin{align}\label{rho}
 \rho&=-\frac{3}{2}\alpha_1\left(h^2-f^2+2Hh\right)\notag\\
 &+3\omega\gamma\left[\frac{1}{2}\alpha_1+\alpha_2\left(\omega^2+\frac{k}{a^2}-f^2\right)\right],\\
@@ -395,23 +422,28 @@ p&=\alpha_1\left[\dot{h}+Hh+\frac{1}{2}\left(h^2-f^2+2Hh\right)\right]\notag\\
 &-2\omega\gamma\left[\frac{1}{2}\alpha_1+\alpha_2\left(\dot{\omega}+H\omega\right)\right]\notag\\
 &+\left(\dot{\gamma}+\frac{1}{2}\gamma\dot{\Phi}\right)\left[\frac{1}{2}\alpha_1+\alpha_2\left(\omega^2+\frac{k}{a^2}-f^2\right)\right].
 \end{align}
-The identification satisfy $\dot{\rho}+3H\left(\rho+p\right)=0$. Using equations of motion, one can show that
-\begin{align*}
-\rho\sim H^2+\frac{k}{a^2}+\text{const.}
-\end{align*}
-For $u_\pm<0$, this function remains finite at the begining.
-From expressions \eqref{rho} and \eqref{presion} one can see that the induced energy density and pressure are not positive definite quantities. In fact, due to the presence of torsion and extra dimensional fields, the universe solutions undergoes through accelerating expansive age with no need of extra fluids of exotic class. 
+Using the solutions obtained in the previous section , it can be shown that
+\begin{align}
+\rho &= \frac{3}{2}\alpha_1\left(H^2 + \frac{k}{a^2}\right) + 3\alpha_0, \\
+p &= -\alpha_1\left(\dot{H} + \frac{3}{2}\,H^2 + \frac{k}{2a^2}\right) - 3\alpha_0,
+\end{align}
+satisfying the continuity equation $\dot{\rho}+3H\left(\rho+p\right)=0$. 
+
+For $u_\pm<0$, the energy density remains finite at the begining. From expressions \eqref{rho} and \eqref{presion} one can see that the induced energy density and pressure are not positive definite quantities. In fact, the Universe undergoes through an accelerating expansion phase due to the presence of torsion and the extra dimensional fields. 
 
 %_-----------------------------------------------------------------------------------------
 
-\section{Discussion and Conclusions}\label{conclusions}
-It is known that KK theory, in its simplest version, give rise matter fields a manifestation of extra dimensional metric degrees of freedom. The kind of matter that arises in the reduced spacetime is subordinated to the topology taken for the extra compact manifold. In general, those fields will gravitate and modulate the behaviour of spacetime in its time evolution. We have constructed the simplest model in five dimensional spacetime that allow the presence of torsion in the KK decomposition. In the cosmological model, the induced matter present due to an extra compact section taken to be $S^1$ are the usual scalar field --a metric degree of freedom-- and a vector field that comes from the dimensional reduction of a general spin connection. Torsion exists both in the reduced manifold and in the higher dimensional and indeed, it participate in the effective energy-momentum form that gravitates as a perfect fluid. Since the sign of the energy density nor of the presures in the fluid are in no way guaranteed, it is interpreted as a class of matter of exotic characteristics. Exact solution for a five dimensional vacuum are studied. Accelerating, and bouncing and inflationary universes are possible by the equations of motion.\\
-There are periods of time where $f^2(t)$ becomes negative. As we can see from Eq.~\eqref{homotorsion}, $f$ corresponds to the completely antisymmetric part of torsion and is unseen by classical particles following geodesics along spacetime. It does not couple to spin-0 or spin-1 bosons, but it does appear as an effective interaction term in the Dirac Lagrangian writen in a curved spacetime \cite{Carroll:1994dq}
+\section{Discussion and Conclusions\label{conclusions}}
+
+It is known that KK theory, in its simplest version, gives rise to matter fields as a manifestation of the extra dimensional metric degrees of freedom. The kind of matter arising in the reduced spacetime is subordinated to the topology taken for the extra compact manifold. In general, those fields will gravitate and modulate the behaviour of spacetime in its time evolution. 
+
+We find cosmological solutions of the Friedmann--Robertson--Walker class for the dimensionally reduced Lovelock--Cartan theory in five dimensions~\cite{Mardones:1990qc}. This theory allows torsion to propagate in vacuum, in contrast to the Einstein--Cartan theory. The induced matter fields in the reduced cosmological scenario are the usual scalar field --a metric degree of freedom-- and a vector field, coming from the dimensional reduction of a general spin connection. Those fields participate in the effective energy-momentum form. Neither the energy density nor the presure are strictly positive definite, therefore, can be interpreted as a class of matter of exotic features. Five-dimensional vacuum solutions are studied, where accelerating, bouncing and inflationary solutions were found.
+
+There are periods of time where $f^2(t)$ becomes negative. As we can see from Eq.~\eqref{homotorsion}, $f$ corresponds to the completely antisymmetric part of torsion and is unseen by classical particles following geodesics. It does not couple minimally to spin-0 or spin-1 bosons, but it does appear as an effective interaction term in the Dirac Lagrangian written in a curved spacetime~\cite{Hehl:1976kj}
 \begin{align*}
-\mathcal{L}_{\text{Interaction}}&=-\frac{i}{8}T_{\alpha\mu\nu}\bar{\Psi}\Gamma^{\alpha\mu\nu}\Psi\\
-&=\frac{3}{2}f\bar{\Psi}\Gamma^0\Gamma^5\Psi.
+\mathcal{L}_{\text{Interaction}}&=-\frac{i}{8}T_{\alpha\mu\nu}\bar{\Psi}\Gamma^{\alpha\mu\nu}\Psi =\frac{3}{2}f\bar{\Psi}\Gamma^0\Gamma^5\Psi
 \end{align*}
-It couples to the chiral current. For imaginary values of $f(t)$, the corresponding violation of current conservation can be interpreted as particle creation. Similar results where found in \cite{Toloza:2013wi} for another cosmological model with torsion that share some of the couplings of a reduced action. 
+It couples to the chiral current. For imaginary values of $f(t)$, the corresponding violation of current conservation can be interpreted as particle creation. Similar results where found in~\cite{Toloza:2013wi} for another cosmological model with torsion which shares some of the couplings of the reduced action. 
 \begin{acknowledgments}
 The authors would like to thank O. Miskovic, A. Toloza and J. Zanelli for enlightening discussions in this work.
 \end{acknowledgments}
@@ -419,8 +451,10 @@ The authors would like to thank O. Miskovic, A. Toloza and J. Zanelli for enligh
 
 
 \appendix
-\section{Riemann-Cartan Geometry}\label{Riemann-Cartan}
-In Riemann--Cartan geometry, both the vielbein $e^A$ and the spin connection $\omega^{AB}$ are independent fields. We will drop the hats since we will not deal with the KK decomposition. Stationary variations of a gravity actions must be taken with respect to both fields, allowing in general, the presence of torsion. The spin connection, however, can be decomposed in a Riemannian part $\tilde{\omega}^{AB}$ that satisfies $\tilde{\mbox{D}}e^A=0$, and a contorsion $\kappa^{AB}=-\kappa^{BA}$, such that 
+
+\section{Riemann--Cartan Geometry\label{Riemann-Cartan}}
+
+In Riemann--Cartan geometry, both the vielbein $e^A$ and the spin connection $\omega^{AB}$ are independent fields. We will drop the hats since we are not dealing with the KK decomposition. Stationary variations of a gravitational action principle must be taken with respect to both fields, allowing in general the presence of torsion. The spin connection, however, can be decomposed in a Riemannian part $\tilde{\omega}^{AB}$ satisfying $\tilde{\mbox{D}}e^A=0$, and a contorsion piece $\kappa^{AB}=-\kappa^{BA}$, such that 
 \begin{equation}\label{spin separation}
   \omega^{AB}=\tilde{\omega}^{AB}+\kappa^{AB}.
 \end{equation} 
@@ -428,17 +462,16 @@ Therefore, the torsion 2-form defined as the covariant derivative of the vielbei
 \begin{equation}
   T^A=\kappa^A_{\ B}\wedge e^B.
 \end{equation}
-On the other hand, the curvature 2-form also suffers corrections with respect to the Riemannian one due to the presence of torsional degrees of freedom. This can be seen explictly by taking the definition of curvature $R^{AB}=\mbox{d}\omega^{AB}+\omega^a_{\ C}\wedge\omega^{CB}$ and \eqref{spin separation} to find
+On the other hand, the curvature $2$-form also suffers corrections with respect to the Riemannian one due to the presence of torsional degrees of freedom. This can be seen explictly by taking the definition of curvature in Eq.~\eqref{curvadef} and~\eqref{spin separation} to find
 \begin{equation}\label{curvature decomp}
-  R^{AB}=\tilde{R}^{AB}+\kappa^A_{\ C}\wedge\kappa^{CB}+\tilde{\mbox{D}}\kappa^{AB},
+  R^{AB} = \tilde{R}^{AB} + \tilde{\mbox{D}}\kappa^{AB} + \kappa^A_{\ C}\wedge\kappa^{CB},
 \end{equation}
-where $\tilde{R}^{AB}$ is the Riemannian curvature built with $\tilde{\omega}^{AB}$.
+where $\tilde{R}^{AB}$ is the Riemannian curvature built up from $\tilde{\omega}^{AB}$.
 
 
-%_-----------------------------------------------------------------------------------------
+\section{Isotropic--Homogeneus Ansatz\label{homotropic}}
 
-\section{Isotropic--Homogeneus Ansatz}\label{homotropic}
-The cosmological principle demands the spacial section of spacetime to be isotropic and homogeneus. This means that the fields involve in the model must be compatible with this assumption. A spacetime is an isotropic spacetime with respect to certain point $P$ if after a rotation with respect to an axis that pass through $P$, all the geometrical properties remain invariant, thus the spacetime looks the same in all directions. By homogeneity we understand that spacetime looks the same from every point $P$. These two assumptions are translated in the Killing equations for the fields, which are the vanishing of the Lie derivatives of the fields along the direction of the vector generators of symmetries $\{\zeta^\lambda_{i}\}$. In particular the Killing equations for the metric tensor and the torsion tensor are
+The cosmological principle demands the spacial section of spacetime to be isotropic and homogeneus. This means that the fields involved in the model must be compatible with this assumption. A spacetime is an isotropic spacetime with respect to certain point $P$ if after a rotation with respect to an axis passing through $P$, all the geometrical properties remain invariant, thus the spacetime looks the same in all directions. Homogeneity is understood such that spacetime looks the same from every point $P$. These two assumptions are translated in the Killing equations, which are the vanishing of the Lie derivatives of the fields along the vectors which generate the symmetries $\{\zeta^\lambda_{i}\}$. In particular the Killing equations for the metric tensor and the torsion tensor are
 \begin{align}
   \label{killing metric}
   \text{\textsterling}_i g_{\mu\nu}&=\zeta^\lambda_i\partial_\lambda g_{\mu\nu}+\partial_\mu\zeta^\lambda_i g_{\lambda\nu}+\partial_\nu\zeta^\lambda_i g_{\mu\lambda}=0,\\
@@ -452,20 +485,21 @@ where $T^\alpha_{\ \mu\nu}$ are the components of the torsion 2-form defined by 
   \text{\textsterling}_i A_\mu&=\zeta^\lambda_i\partial_\lambda A_\mu+\zeta^\lambda_i\partial_\mu A_\lambda=0,\\
   \text{\textsterling}_i \phi &=\zeta^\lambda_i\partial_\lambda\phi=0,
 \end{align}
-and also for the components (tensors) $\alpha_{\mu\nu}=-\alpha_{\nu\mu}$, $\beta_{\mu\nu}$ and $\gamma_\mu$, defined such that
+and also for the components of $\alpha_{\mu\nu}=-\alpha_{\nu\mu}$, $\beta_{\mu\nu}$ and $\gamma_\mu$, defined such that
 \begin{align*}
   \alpha^{ab}&=E^{a\mu}E^{b\nu}\alpha_{\mu\nu},\\
   \beta^a&=E^{a\mu}\beta_{\mu\nu}\mbox{d}x^\nu,\\
   \gamma^a&=E^{a\mu}\gamma_\mu,
 \end{align*} 
-and whose Killing equations are analogous to the tensorial one, \eqref{killing metric} and vectorial one,\eqref{killing vector}.\\
-The set of Killing vectors $\{\zeta^\lambda_i\}$ are, on the one hand, the generators of spatial rotations in three dimensions $SO(3)$, $\xi_i=\epsilon_{ijk}x_j\partial_k$, and the Killing vectors assosiated with spacial translations $\mathcal{P}_i=\sqrt{1-kr^2}\partial_i$, that satisfy the algebra
+and whose Killing equations are analogous to the tensorial one,~\eqref{killing metric} and vectorial one,~\eqref{killing vector}.
+
+The set of Killing vectors $\{\zeta^\lambda_i\}$ are the generators of $SO(3)$, which generate the spatial rotations in three dimensions, $\xi_i=\epsilon_{ijk}x_j\partial_k$, and the Killing vectors assosiated with spacial translations $\mathcal{P}_i=\sqrt{1-kr^2}\partial_i$, satisfy the algebra
 \begin{align}
   \left[\xi_i,\xi_j\right]&=\epsilon_{ijk}\xi_k,\\
   \left[\mathcal{P}_i,\mathcal{P}_j\right]&=-k\epsilon_{ijk}\xi_k,\\
   \left[\xi_i,\mathcal{P}_j\right]&=\epsilon_{ijk}\xi_k.
 \end{align}
-These requirements on the fields are translated to a set of first order differential equations whose most general solutions determines our ansatz structure \eqref{vielbein cosmo} to \eqref{gamma cosmo}. The fields strengths for isotropic--homogeneus vielbein and spin connection are written next. The curvature components are
+These requirements on the fields are translated to a set of first order differential equations whose most general solutions determines our ansatz structure from Eq.~\eqref{vielbein cosmo} to \eqref{gamma cosmo}. The fields strengths for isotropic--homogeneus vielbein and spin connection are written next. The curvature components are
 \begin{align}
   R^{0i}&=\left(\dot{\omega}+H\omega\right)e^0\wedge e^i+f\omega\epsilon^i_{\ jk}e^j\wedge e^k,\\
   R^{ij}&=\left(\omega^2+\frac{k}{a^2}-f^2\right)e^i\wedge e^j
@@ -477,20 +511,20 @@ and the torsion components
 \end{equation}
 where $h(t)$ and $H(t)$ were defined in Section \ref{5EGB}.
 
-%_-----------------------------------------------------------------------------------------
-\section{Time Dependence of the Solutions}\label{solutions t}
-We supply here the time dependent expressions of the cosmological solutions for the significantly differents values of $u_\pm$ in terms of the dimensionless parameter $\tau=\sqrt{|u_\pm|}(t-t_0)$.\\
-\newline
+\section{Time dependence of the solutions\label{solutions t}}
+
+We supply here the time-dependent expressions for the cosmological solutions, given the differents values of $u_\pm$, in terms of the dimensionless parameter~$\tau=\sqrt{|u_\pm|}(t-t_0)$.
+\medskip
+
 $\bullet\ u_\pm>0$:
 \begin{align}
   \gamma(t)&=-\sqrt{u_\pm}\cot\tau,\\
-  \phi(t)&=\phi_0\sin^2\tau\exp\left[\frac{\mp\sqrt{6\Delta}}{4\alpha_2}\cos^2\tau\right],\\
-  a(t)&=\frac{a_0}{\sqrt{u_\pm}}|\cos\tau|\exp\left[\frac{\pm\sqrt{6\Delta}}{24\alpha_2}\cos^2\tau\right],\\
+  \phi(t)&=\phi_0\sin^2\tau\exp\left[\frac{\mp\sqrt{6\Delta}}{4\alpha_2 u_\pm}\cos^2\tau\right],\\
+  a(t)&=\frac{a_0}{\sqrt{u_\pm}}|\cos\tau|\exp\left[\frac{\pm\sqrt{6\Delta}}{24\alpha_2 u_\pm}\cos^2\tau\right],\\
   f^2(t)&=u_\pm\frac{k}{a_0^2}\sec^2\tau\exp\left[\frac{\mp\sqrt{6\Delta}}{12\alpha_2u_\pm}\cos^2\tau\right]\notag\\
   &+u_\pm\tan^2\tau-Y_\pm.
 \end{align}
-\\
-\medskip
+
 $\bullet\ u_\pm=0$:
 \begin{align}
   \gamma(t)&=0,\\
@@ -499,8 +533,7 @@ $\bullet\ u_\pm=0$:
   f^2(t)&=\frac{k}{a_0^2(t-t_0)^2}\exp\left[\frac{\mp\sqrt{6\Delta}}{12\alpha_2}(t-t_0)^2\right]\notag\\
   &+(t-t_0)^{-2}-Y_\pm.
 \end{align}
-\\
-\medskip
+
 $\bullet\ u_\pm<0$:
 \begin{align}
   \gamma(t)&=-\sqrt{-u_\pm}\coth\tau,\\
