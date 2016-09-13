@@ -215,11 +215,9 @@ The decomposition in Eq.~\eqref{Nconnection} adds new metric-independent fields.
 The $N$-dimensional Lorentz curvature and torsion are given by the Cartan structure equations
 \begin{align}
   \label{curvadef}
-  \hat{R}^{AB} &= \mbox{d}\hat{\omega}^{AB}+\hat{\omega}^A_{\ \ C}\wedge\hat{\omega}^{CB} \\
-  &= \frac{1}{2} \hat{R}^{AB}{}_{\mu\nu} \, \de{x}^\mu \we \de{x}^\nu, \notag\\
+  \hat{R}^{AB} &= \mbox{d}\hat{\omega}^{AB}+\hat{\omega}^A_{\ \ C}\wedge\hat{\omega}^{CB} = \frac{1}{2} \hat{R}^{AB}{}_{CD} \, \hat{e}^C \wedge \hat{e}^D,\\
   \label{tordef}
-  \hat{T}^A &= \mbox{d}\hat{e}^A+\hat{\omega}^A_{\ \ B}\wedge\hat{e}^B \\
-  &= \frac{1}{2} \hat{T}^{A}{}_{\mu\nu} \, \de{x}^\mu \we \de{x}^\nu. \notag
+  \hat{T}^A &= \mbox{d}\hat{e}^A+\hat{\omega}^A_{\ \ B}\wedge\hat{e}^B = \frac{1}{2} \hat{T}^{A}{}_{BC} \, \hat{e}^B \wedge \hat{e}^C. 
 \end{align}
 Using the definition of curvature in Eq.~\eqref{curvadef},  with the KK ansatz for the spin connection~\eqref{Nconnection}, we find
 \begin{align}
@@ -262,37 +260,40 @@ The most general theory requiring the Lagrangian to be (i)~an invariant $N$-form
 
 In five dimensions, the action principle of such a theory is given by  
 \begin{widetext}
-  \begin{equation}\label{action5EGB}
-    I=\int\limits_{M_5}\hat{\epsilon}_{ABCDE}\Big(\frac{\alpha_0}{5}\hat{e}^A\wedge\hat{e}^B\wedge\hat{e}^C\wedge
+  \begin{equation}
+    \label{action5EGB}
+    I = \int_{M_5} \hat{\epsilon}_{ABCDE} \Big(\frac{\alpha_0}{5}\hat{e}^A\wedge\hat{e}^B\wedge\hat{e}^C\wedge
     \hat{e}^D\wedge\hat{e}^E
     +\frac{\alpha_1}{3}\hat{R}^{AB}\wedge\hat{e}^C\wedge\hat{e}^D\wedge\hat{e}^E
     +\alpha_2\hat{R}^{AB}\wedge\hat{R}^{CD}
     \wedge\hat{e}^E\Big),
   \end{equation}
-  where $\alpha_0$, $\alpha_1$ and $\alpha_2$ are dimensionful coupling constants. Variation with respect to the $5$-dimensional vielbein and spin connection give the equations
-  \begin{align}\label{delta e}
+  where $\alpha_0$, $\alpha_1$ and $\alpha_2$ are dimensionful coupling constants. Its variation with respect to the five-dimensional vielbein and spin connection give the equations
+  \begin{align}
+    \label{delta e}
     \hat{\epsilon}_{ABCDE}\Big(\alpha_0\hat{e}^A\wedge\hat{e}^B\wedge\hat{e}^C\wedge\hat{e}^D
-    +\alpha_1\hat{R}^{AB}\wedge\hat{e}^C\wedge\hat{e}^D
-    +\alpha_2\hat{R}^{AB}\wedge\hat{R}^{CD}\Big)&=0,
-    \\\label{delta w}
+    + \alpha_1\hat{R}^{AB}\wedge\hat{e}^C\wedge\hat{e}^D
+    + \alpha_2\hat{R}^{AB}\wedge\hat{R}^{CD}\Big)&=0,
+    \\
+    \label{delta w}
     \hat{\epsilon}_{ABCDE}\Big(\alpha_1\hat{e}^C\wedge\hat{e}^D+
     2\alpha_2\hat{R}^{CD}\Big)\wedge\hat{T}^E&=0,
   \end{align}
   respectively.
 \end{widetext}
 
-In general, the Lovelock--Cartan theory in five dimensions allows the torsional term~\cite{Mardones:1990qc},
+The Lovelock--Cartan theory in five dimensions allows a unique torsional extension which is not in the Lovelock series~\cite{Mardones:1990qc},
 \begin{align}
   \label{boundary}
-  \mathcal{L} \propto \hat{T}_A\wedge \hat{R}^A_{\ B}\wedge\hat{e}^B,
+  \mathcal{L} \propto \hat{T}_A\wedge \hat{R}^A_{\ B}\wedge\hat{e}^B.
 \end{align}
-which can be written as a boundary term proportional to the Nieh-Yan invariant, adding no dynamics to the field equations. The action principle~\eqref{action5EGB}, along with the torsional term~\eqref{boundary}, describes the general Lovelock--Cartan theory in five dimensions.
+However, it can be written as a boundary term, adding no dynamics to the field equations.
 
 In this work, we will focus on the region in the parameter space where
 \begin{equation}\label{delta}
   \Delta\equiv\alpha_1^2-4\alpha_0\alpha_2\neq 0.
 \end{equation}
-This condition place us outside the Chern--Simons point since, otherwise, the field equations~\eqref{delta e} and~\eqref{delta w} remain invariant under $AdS_5$ gauge transformations, while the action principle~\eqref{action5EGB} can be recognized as its Chern--Simons form~\cite{Zanelli:2005sa,Troncoso:1999pk}. 
+This condition place us outside the Chern--Simons point since, otherwise, the field equations~\eqref{delta e} and~\eqref{delta w} remain invariant under $AdS_5$ gauge transformations, while the action in Eq.~\eqref{action5EGB} can be recognized as its Chern--Simons form~\cite{Zanelli:2005sa,Troncoso:1999pk}. 
 
 In terms of the KK ansatz presented in previous sections, the field equations can be decomposed into its distinctive parts. The equation of motion for the five-dimensional vielbein~\eqref{delta e}, leads to the following set of reduced field equations
 \begin{align}\label{equation}
