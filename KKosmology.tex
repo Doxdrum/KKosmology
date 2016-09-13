@@ -3,6 +3,7 @@
 \usepackage{amsmath,amsthm,latexsym,amssymb,amsfonts}
 \usepackage{xcolor}
 \usepackage{textcomp}
+\usepackage{float}
 \usepackage[%
   colorlinks=true,
   urlcolor=blue,
@@ -23,7 +24,7 @@
 
 
 \hypersetup{%
-  pdftitle={Cosmology from Kaluza--Klein reduction on five-dimensional Lovelock--Cartan theory},
+  pdftitle={Kaluza--Klein Cosmology from five-dimensional Lovelock--Cartan Theory},
   pdfauthor={Oscar Castillo-Felisola,}{Cristobal Corral,}{Simon del Pino,}{Francisca Ramirez.},
   pdfkeywords={Torsion,} {Cosmology,}{Kaluza--Klein reduction,}{Generalised Gravity.},
   pdflang={English}
@@ -35,7 +36,7 @@
 %------------------
 \begin{document}
 
-\title{Cosmology from  Kaluza--Klein reduction on five-dimensional Lovelock--Cartan Theory}
+\title{Kaluza--Klein Cosmology from five-dimensional Lovelock--Cartan Theory}
 
 \author{Oscar \surname{Castillo-Felisola}}
 \email{o.castillo.felisola@gmail.com}
@@ -73,7 +74,7 @@
 The experimental status of General Relativity (GR), regarding the solar system tests~\cite{Will:2014kxa} and the detection of signals consistent with the merge of two black holes by the LIGO collaboration~\cite{Abbott:2016blz,Abbott:2016nmj}, have settled it as the most successful theory of gravity so far. However, the difficulties on finding out explanations for the so called \emph{dark sector} of the Universe,
 % and a \emph{consistent} quantum theory of gravitation,
 have driven the community to think that GR is not the ultimate gravitational theory. 
-The \emph{dark sector} of the Universe is composed by two different forms of ``matter'', whose effects are detected at different scales. On the one hand, at galactic scales, the gravitational lensing produced by the local distribution of energy, suggests the presence of an exotic form of matter, unseen by the current light-based telescopes~\cite{Sofue:2000jx}, for this it is named dark matter. Such an abundance in the galaxy is also compatible with the velocity profile of stars at its outter regions and it is needed to achieve the current structures formation. This matter would interact mostly (if not only) through gravity. On the other hand, at cosmic scales, the experimental data obtained from Type Ia supernovae observations, indicates that our Universe is passing through a phase of accelerated expansion~\cite{Riess:1998cb}. This introduces the dark energy hypothesis to generate such a behavior. 
+The \emph{dark sector} of the Universe is composed by two different forms of ``matter'', whose effects are detected at different scales. On the one hand, at galactic scales, the gravitational lensing produced by the local distribution of energy, suggests the presence of an exotic form of matter, unseen by the current light-based telescopes~\cite{Sofue:2000jx}, for this it is named dark matter. Such an abundance in the galaxy is also compatible with the velocity profile of stars at its outter regions and it is needed to achieve the current structures formation. This matter would interact mostly (if not only) through gravity. On the other hand, at cosmic scales, the experimental data obtained from Type Ia supernovae observations, indicates that our Universe is passing through a phase of accelerated expansion~\cite{Riess:1998cb}. This introduces the dark energy hypothesis to generate such a behaviour. 
 
 The shortcomings of GR on describing these phenomena, are the main motivation to look for new gravitational degrees of freedom. Among the possible extensions, higher dimensional models could shed some light on the nature of these new degrees of freedom. For instance, as it was shown in the early works of T.~Kaluza and O.~Klein, the existence of an extra dimension within the GR framework would give rise to a unified picture of gravity and electromagnetism, along with a spectrum of new heavy particles~\cite{Kaluza:1921tu,*Klein:1926tv}. This idea opened the possibility of a novel geometrical understanding of interactions, where the gauge group arise as a consequence of the topology of the spatial compact manifold in a higher dimensional spacetime. The idea of higher dimensions comes naturally in diverse physical models, as for example: supersymmetry and supergravity, string theory~\cite{Green:1987sp,*Green:1987mn}, and novel proposals by Arkani-Hammed, Dimopoulos and Dvali~\cite{ArkaniHamed:1998rs,*Antoniadis:1998ig}, and Randall and Sundrum~\cite{Randall:1999ee,*Randall:1999vf} models, as attempts of solving the hierarchy problem.
 
@@ -256,7 +257,7 @@ This is taken as a proof of the tensorial nature of these new fields under the f
 
 \section{Five-Dimensional Lovelock--Cartan Reduction\label{5EGB}}
 
-The most general theory requiring the Lagrangian to be (i)~an invariant $N$-form under local Lorentz transformations; (ii)~a local polynomial of the vielbein, the Lorentz connection and their exterior derivatives; (iii)~constructed without the Hodge dual, is the so-called Lovelock--Cartan theory of gravity~\cite{Mardones:1990qc}. This theory is the natural generalization of the Lanczos--Lovelock action, when torsional degrees of freedom are present. 
+The most general theory requiring the Lagrangian to be (i)~an invariant $N$-form under local Lorentz transformations; (ii)~a local polynomial of the vielbein, the Lorentz connection and their exterior derivatives; (iii)~constructed without the Hodge dual,\footnote{The Hodge dual maps $p$-forms into $(N-p)$-forms through $\star\left(\hat{e}^{A_1}\wedge ... \wedge\hat{e}^{A_p}\right) = \frac{1}{(N-p)!}\hat{\epsilon}^{A_1\ldots A_p}{}_{A_{p+1}...A_N}\,\hat{e}^{A_{p+1}}\wedge ... \wedge\hat{e}^{A_N}$.} is the Lovelock--Cartan theory of gravity~\cite{Mardones:1990qc}. This is the natural generalization of Lanczos--Lovelock when torsional degrees of freedom are present. 
 
 In five dimensions, the action principle of such a theory is given by  
 \begin{widetext}
@@ -277,15 +278,16 @@ In five dimensions, the action principle of such a theory is given by
     \\
     \label{delta w}
     \hat{\epsilon}_{ABCDE}\Big(\alpha_1\hat{e}^C\wedge\hat{e}^D+
-    2\alpha_2\hat{R}^{CD}\Big)\wedge\hat{T}^E&=0,
+    2\alpha_2\hat{R}^{CD}\Big)\wedge\hat{T}^E&=0.
   \end{align}
-  respectively.
 \end{widetext}
+
+The last term in Eq.~\eqref{action5EGB} is the five-dimensional Gauss--Bonnet term for a Lorentz curvature written in exterior forms, which is analogue to Eq.~\eqref{GB} for the Riemannian case.
 
 The Lovelock--Cartan theory in five dimensions allows a unique torsional extension which is not in the Lovelock series~\cite{Mardones:1990qc},
 \begin{align}
   \label{boundary}
-  \mathcal{L} \propto \hat{T}_A\wedge \hat{R}^A_{\ B}\wedge\hat{e}^B.
+  \mathcal{L}_{T} \propto \hat{T}_A\wedge \hat{R}^A_{\ B}\wedge\hat{e}^B.
 \end{align}
 However, it can be written as a boundary term, adding no dynamics to the field equations.
 
@@ -293,9 +295,10 @@ In this work, we will focus on the region in the parameter space where
 \begin{equation}\label{delta}
   \Delta\equiv\alpha_1^2-4\alpha_0\alpha_2\neq 0.
 \end{equation}
-This condition place us outside the Chern--Simons point since, otherwise, the field equations~\eqref{delta e} and~\eqref{delta w} remain invariant under $AdS_5$ gauge transformations, while the action in Eq.~\eqref{action5EGB} can be recognized as its Chern--Simons form~\cite{Zanelli:2005sa,Troncoso:1999pk}. 
+This condition place us outside the Chern--Simons point. Otherwise, the field equations~\eqref{delta e} and~\eqref{delta w} are invariant under a larger gauge group ($AdS_5$), while the action~\eqref{action5EGB} becomes the Chern--Simons form for that group~\cite{Zanelli:2005sa,Troncoso:1999pk}. 
 
-In terms of the KK ansatz presented in previous sections, the field equations can be decomposed into its distinctive parts. The equation of motion for the five-dimensional vielbein~\eqref{delta e}, leads to the following set of reduced field equations
+In terms of the KK ansatz presented in the previous section, the field equations can be decomposed into its distinctive parts, regarding
+its \(M_{4} \times S^1\) decomposition. The Eq.~\eqref{delta e} leads to 
 \begin{align}\label{equation}
   \epsilon_{abcd}\Big[\alpha_0 e^b\wedge e^c\wedge e^d + \frac{1}{2}\alpha_1\left(M^{bc}-L^b\wedge e^c\right)\wedge e^d&\notag\\
     -\alpha_2\left(L^b\wedge M^{cd} + K^b\wedge N^{cd}\right)\Big]&=0,\\
@@ -304,7 +307,7 @@ In terms of the KK ansatz presented in previous sections, the field equations ca
   +\alpha_1M^{ab}\wedge e^c\wedge e^d+\alpha_2M^{ab}\wedge M^{cd}\big)&=0,\\
   \epsilon_{abcd}\left(\alpha_1N^{ab}\wedge e^c\wedge e^d+2\alpha_2N^{ab}M^{cd}\right)&=0,
 \end{align}
-while the equation of motion for the spin connection~\eqref{delta w} gives
+while Eq.~\eqref{delta w} gives
 \begin{align}
   \epsilon_{abcd}\Big[\alpha_1\left(e^c\wedge e^d\wedge Z-2e^c\wedge T^d\right)
     +2\alpha_2\Big(N^{cd}\wedge W&\notag\\
@@ -325,18 +328,21 @@ The fields $M^{ab}$, $N^{ab}$, $L^a$, $K^a$, $W$, $V^a$ and $Z$ are defined from
 
 \subsection{Cosmological ansatz}
 
-In order to look for cosmological solutions, we demand the symmetries assumed by the cosmological principle, i.e. isotropy and homogeneity of the involved fields. This can be achieved by considering the Lie derivative of each field, along the Killing vectors which generates the symmetries, to vanish. The Appendix~\ref{homotropic} is devoted to the details of how to reach the general ansatz we are presenting next. The $4$-dimensional vielbein compatible with the Friedman--Robertson--Walker metric is determined only by one function, the so-called scale factor $a(t)$, and their components read
+In order to look for cosmological solutions, we demand the symmetries assumed by the cosmological principle, i.e. isotropy and homogeneity of the involved fields. This can be achieved by imposing the Lie derivative of each field along the Killing vectors which generates the symmetries, to vanish. Appendix~\ref{homotropic} is devoted to the details of how to find the general ansatz.
+
+The four-dimensional vielbein compatible with the Friedman--Robertson--Walker metric is determined only by one function, the scale factor $a(t)$, and their components read
 \begin{align}
   \label{vielbein cosmo}
   e^0&=\mbox{d}t, & e^1&=\frac{a(t)}{\sqrt{1-kr^2}}\mbox{d}r,\\
   e^2&=a(t)r\mbox{d}\theta, & e^3&=a(t)r\sin\varphi\mbox{d}\varphi, 
 \end{align}
-where $k=+1,0,-1$ determines the spatial section of the four-dimensional manifold to be closed, flat or open, respectively. 
+where $k=+1,0,-1$ determines the extrinsic curvature of the four-dimensional manifold to be closed, flat or open, respectively. 
 
-The scalar field is determined by one time-dependent function, denoted by
+The scalar field is a time-dependent function, 
 \begin{equation}
-  \phi=\phi(t).
+  \phi=\phi(t),
 \end{equation}
+which is interpreted as the scale factor of the compact extra dimension.
 
 On the other hand, the spin connection adds two functions that we called $\omega(t)$ and $f(t)$,
 \begin{align}
@@ -353,9 +359,9 @@ The nonvanishing components of the spin connection induced by the compact manifo
   \gamma^0&=-\gamma(t).
 \end{align}
 
-For this ansatz, however, the $1$-form $A$ is $A_t(t)\text{d}t$, which can be shown to have vanishing field strength $F$. Thus, without loss of generality, it can be fixed to zero by means of an $U(1)$ gauge transformation or, equivalently, a diffeomorphism transformation along the $z$-direction.
+The $1$-form $A$ is $A(t)\text{d}t$, has vanishing field strength $F$. Thus, without loss of generality, it can be fixed to zero by means of an $U(1)$ gauge transformation or, equivalently, a diffeomorphism transformation along the $z$-direction.
 
-The equations of motion for the cosmological ansatz give a system of differential equations for the time-dependent functions defined above. Curvature and torsion for this ansatz can be seen in Appendix~\ref{homotropic}. We find that the only non-Riemannian branch demands  $\beta^a=0$. Thus $b(t)=\beta(t)=0$. Otherwise, the system degenerates at the Chern--Simons point. 
+The equations of motion for the cosmological ansatz give a system of differential equations for the time-dependent functions defined above. Curvature and torsion for this ansatz can be seen in Appendix~\ref{homotropic}. We find that the only non-Riemannian branch demands  $\beta^a=0$. Thus $b(t)=\beta(t)=0$. Otherwise, the system is consistent only at the Chern--Simons point, where it degenerates. 
 
 The final set of equations is the following:
 \begin{align}
@@ -371,17 +377,19 @@ The final set of equations is the following:
   \left(\dot{\omega}+\omega^2\right)\left(\alpha_1-2\alpha_2\omega\gamma\right)-\alpha_1
   \omega\gamma+3\alpha_0-\frac{\alpha^2_1}{4\alpha_2}&=0,
 \end{align}
-where dotted functions stand for its time-derivatives. For the sake of simplicity, we have defined $h(t)=\omega(t)-H(t)$, where $H=\dot{a}/a$ is the Hubble function.
+where dot stands for time-derivative. For the sake of simplicity, we have defined $h(t)=\omega(t)-H(t)$, where $H=\dot{a}/a$ is the Hubble function.
 
 \subsection{Solutions}
 
-The system is integrated out developing two non-Riemannian branches, one for each value of the parameter $u_\pm$ defined to be
+The system is integrated and develops two non-Riemannian branches, one for each value of the parameter $u_\pm$ defined to be
 \begin{equation}\label{u}
   u_\pm=\frac{2\alpha_1\pm\sqrt{6\Delta}}{4\alpha_2},
 \end{equation}
-where $\Delta$ was given in Eq.~\eqref{delta}. The Eqs.~\eqref{eqn1} to~\eqref{eqn2} are reduced to the Riemannian system when \mbox{$f=h=0$} and \mbox{$\gamma=-\dot{\phi}/2\phi$}. The details of such a model can be seen in Refs.~\cite{Deruelle:1986iv,Deruelle:2003ck,Henriques:1986jw,Ishihara:1986if,Kleidis:1997mu}.
+where $\Delta$ was given in Eq.~\eqref{delta}.
 
-Due to Eq.~\eqref{u}, the solutions will be valid in the region of parameter space where $\Delta>0$. The function $\omega(t)$ satisfies the equation
+The Eqs.~\eqref{eqn1} to~\eqref{eqn2} are reduced to the Riemannian system when \mbox{$f=h=0$} and \mbox{$\gamma=-\dot{\phi}/2\phi$}. The details of such a model can be seen in Refs.~\cite{Deruelle:1986iv,Deruelle:2003ck,Henriques:1986jw,Ishihara:1986if,Kleidis:1997mu}.
+
+Due to Eq.~\eqref{u}, the solutions will be valid in the region of the parameter space where $\Delta>0$. The function $\omega(t)$ satisfies the equation
 \begin{align}
   \dot{\omega}+\omega^2+u_{\pm} &= 0,
 \end{align}
@@ -391,7 +399,7 @@ which, for the three significantly different values of $u_\pm$, has the followin
   u_\pm=0&:\omega(t)=\left(t-t_0\right)^{-1},\\
   u_\pm<0&:\omega(t)=\sqrt{-u_\pm}\tanh\left[\sqrt{-u_\pm}\left(t-t_0\right)\right],
 \end{align}
-where $t_0$ is an integration constant to be fixed. We relegate the time-dependence of the remaining fields to these expressions for $\omega$ and list their explicit time dependence in Appendix~\ref{solutions t}. The solutions read
+where $t_0$ is an integration constant to be fixed. We express the time-dependence of the remaining fields in terms of $\omega$ and list them explicitly in Appendix~\ref{solutions t}. The solutions read
 \begin{align}
   \gamma(\omega)&=\frac{u_\pm}{\omega},\\
   \phi(\omega)&=\frac{\phi_0\,\omega^2}{\omega^2+u_\pm}\exp\left[\frac{\mp\sqrt{6\Delta}}{4\alpha_2\left(\omega^2+u_\pm\right)}\right],\\
@@ -407,14 +415,68 @@ and $a_0$ and $\phi_0$ are integration constants.
 
 \subsubsection{Bouncing solutions}
 
-For $u_\pm>0$ the solutions are periodic. In that case, the scale factor starts from a singular point and reaches a future one after a time $t_{\rm bounce}=\pi/\sqrt{u_\pm}$. Depending on the particular region on the parameter space, the scale factor undergoes an expanding and contracting age, allowing to reach a minimum value without collapsing, to expand again before a big crunch. Otherwise, it reaches a maximum value before its collapse. It also shows an inflationary phase at early times when the scale factor grows exponentially.
+For $u_\pm>0$ (see Fig.~\ref{uposreg}) the solutions are periodic. In that case, the scale factor $a(t)$ starts from a singular point and reaches a future one after a time $t_{\rm bounce}=\pi/\sqrt{u_\pm}$. Depending on the particular region on the parameter space, the scale factor undergoes an expanding and contracting age, allowing to reach a minimum value without collapsing, to expand again before a big crunch. Otherwise, it reaches a maximum value before its collapse. It also shows an inflationary phase at early times when the scale factor grows exponentially. The bouncing behaviour of the extra dimension is given by the scalar field in a phase difference of $\pi/2$ with respect to $a(t)$.
+
+\begin{figure}[H]
+  \includegraphics[scale=.45]{cond_u_pos.pdf}
+  \caption{The figure on the left denotes the region on the parameter space where $u_+>0$, while the figure on the right shows where $u_->0$. We have normalized $\alpha_1 = 1$.}
+  \label{uposreg}
+\end{figure}
+
+
+\begin{widetext}
+  \begin{figure}[H]
+    \includegraphics[scale=.45]{a_u_pos.pdf} \includegraphics[scale=.45]{phi_u_pos.pdf}
+    \caption{blablabla}
+    \label{upossol}
+  \end{figure}
+
+\end{widetext}
+
+% \begin{figure}[H]
+%  \includegraphics[scale=.45]{a_u_pos.pdf}
+% \label{aupos}
+% \end{figure}
+% 
+% \begin{figure}[H] 
+% \includegraphics[scale=.45]{phi_u_pos.pdf}
+%  \caption{These plots show the bouncing behaviour of the solutions in the distinctive regions of the parameter space. We have normalized each plot to its maximum value $a_{\rm max}$ and $\phi_{\rm max}$, respectively.}
+%  \label{phiupos}
+% \end{figure}
 
 
 \subsubsection{Expanding and contracting solutions}
 
-For $u_\pm\leq 0$, depending on the sign of $\alpha_2$ and the $\pm$-sign in $u_\pm$, the scale factor will infinitely expand while the scalar field reaches an asymtotic vanishing value for late cosmic times, after a period of expansion. This is interpreted as the late time behaviour of the radius of the compact manifold $S^1$, which for this family of solutions provides a natural explanation for its scale. Otherwise, in contrast to the previous behaviour, the scale factor contracts to an asymtotic vanishing value while the scalar field has no upper bound. In the case of strictly negative $u_\pm$, for either contracting or expanding scale factors, their initial values remain finite and the solutions do not present an initial singularity. It has been reported that the GB term in a gravitational action can prevent the universe to expand from an initial singularity \cite{Deruelle:1986iv,Henriques:1986jw,Ishihara:1986if}, which is also the present case. 
+For $u_\pm\leq 0$ (see Fig.~\ref{unegreg}), depending on the sign of $\alpha_2$ and the $\pm$-sign in $u_\pm$, the scale factor will infinitely expand while the scalar field reaches an asymtotic vanishing value for late cosmic times, after a period of expansion. This is interpreted as the late time behaviour of the radius of the compact manifold $S^1$, which for this family of solutions provides a natural explanation for its scale. Otherwise, in contrast to the previous behaviour, the scale factor contracts to an asymtotic vanishing value while the scalar field has no upper bound. In the case of strictly negative $u_\pm$, for either contracting or expanding scale factors, their initial values remain finite and the solutions do not present an initial singularity. It has been reported that the Gauss--Bonnet term can prevent the Universe to expand from an initial singularity \cite{Deruelle:1986iv,Henriques:1986jw,Ishihara:1986if}, which is also the present case. 
 
-\subsubsection{Effective energy density and pressure}
+\begin{figure}[H]
+  \includegraphics[scale=.45]{cond_u_neg.pdf}
+  \caption{The figure on the left denotes the region on the parameter space where $u_+<0$, while the figure on the right shows where $u_-<0$. We have normalized $\alpha_1 = 1$.}
+  \label{unegreg}
+  \includegraphics[scale=.45]{a_u_neg.pdf} 
+  \includegraphics[scale=.45]{phi_u_neg.pdf}
+\end{figure}
+
+
+% \begin{figure}[H]
+%  \includegraphics[scale=.45]{a_u_neg.pdf} 
+%  \includegraphics[scale=.45]{phi_u_neg.pdf}
+%  \caption{Behaviour for $u_-<0$.}
+%  \label{unegsol}
+% \end{figure}
+
+\begin{figure}[H]
+  \includegraphics[scale=.45]{a_u-_0.pdf} 
+  \includegraphics[scale=.45]{phi_u-_0.pdf}
+  \caption{Behaviour for $u_- = 0$.}
+  \label{uzerosol}
+\end{figure}
+
+
+
+
+
+\subsection{Effective energy density and pressure}
 
 The Eq.~\eqref{equation} can be written, by means of the identity~\eqref{curvature decomp}, in the familiar form
 \begin{align}\label{einstein equation}
