@@ -115,9 +115,10 @@ which allows us to define the reduced symbol by fixing the last index. Additiona
 %% since the coordinates of $M_N$ run from $0$ to $N-1$. Our convention fixes $\hat{\epsilon}_{01...N}=1$. Hereon, Riemannian fields (torsion-free) will be explicited by a tilde, as it was done in Eqs.~\eqref{GB} for the curvature.
 
 Due to the topology of the manifold, we can expand the depenence of the fields on the extra coordinate, $z$, in Fourier series as  
-\begin{align}\label{Fourier}
-  \hat{\varrho}(\hat{x}^\Gamma)&=\sum_n\varrho_{(n)}(x)e^{i n z},
-\end{align}
+\begin{equation}
+  \label{Fourier}
+  \hat{\varrho}(\hat{x}^\Gamma)=\sum_n\varrho_{(n)}(x)e^{i n z},
+\end{equation}
 where $x$ denotes the coordinates of the $(N-1)$-manifold, collectively. Henceforth, we will focus in the $n=0$ mode of the expasion, also refered to as the low-energy sector.
 
 \subsection{Metric and affine structure}
@@ -206,18 +207,18 @@ The decomposition in Eq.~\eqref{Nconnection} adds new metric-independent fields.
 The $N$-dimensional Lorentz curvature and torsion are given by the Cartan structure equations
 \begin{align}
   \label{curvadef}
-  \hat{R}^{AB} &= \mbox{d}\hat{\omega}^{AB}+\hat{\omega}^A_{\ \ C}\wedge\hat{\omega}^{CB} = \frac{1}{2} \hat{R}^{AB}{}_{CD} \, \hat{e}^C \wedge \hat{e}^D,\\
+  \hat{R}^{AB} &= \mbox{d}\hat{\omega}^{AB}+\hat{\omega}^A_{\ \ C}\wedge\hat{\omega}^{CB} = \frac{1}{2} \hat{R}^{AB}{}_{CD} \; \hat{e}^C \wedge \hat{e}^D,\\
   \label{tordef}
-  \hat{T}^A &= \mbox{d}\hat{e}^A+\hat{\omega}^A_{\ \ B}\wedge\hat{e}^B = \frac{1}{2} \hat{T}^{A}{}_{BC} \, \hat{e}^B \wedge \hat{e}^C. 
+  \hat{T}^A &= \mbox{d}\hat{e}^A+\hat{\omega}^A_{\ \ B}\wedge\hat{e}^B = \frac{1}{2} \hat{T}^{A}{}_{BC} \; \hat{e}^B \wedge \hat{e}^C. 
 \end{align}
 Using the definition of curvature in Eq.~\eqref{curvadef},  with the KK ansatz for the spin connection~\eqref{Nconnection}, we find
 \begin{align}
   \label{R1}
   \hat{R}^{ab}&=R^{ab}+\sqrt{\phi}\alpha^{ab}F-\beta^a\wedge\beta^b\notag\\
-  &+\left(\mbox{D}\alpha^{ab}+\frac{1}{2}\alpha^{ab}\mbox{d}\ln\phi-2\beta^{[a}\gamma^{b]}\right)\wedge\hat{e}^N,\\
+  & \quad +\left(\mbox{D}\alpha^{ab}+\frac{1}{2}\alpha^{ab}\mbox{d}\ln\phi-2\beta^{[a}\gamma^{b]}\right)\wedge\hat{e}^N,\\
   \label{R2}
   \hat{R}^{Na}&=-\left(\mbox{D}\beta^a+\sqrt{\phi}\gamma^a F\right)\notag\\
-  &+\left(\alpha^a_{\ b}\beta^b-\mbox{D}\gamma^a-\frac{1}{2}\gamma^a\mbox{d}\ln\phi\right)\wedge\hat{e}^N.
+  & \quad +\left(\alpha^a_{\ b}\beta^b-\mbox{D}\gamma^a-\frac{1}{2}\gamma^a\mbox{d}\ln\phi\right)\wedge\hat{e}^N.
 \end{align}
 
 Similarly from the definition of torsion in Eq.~\eqref{tordef}, we find its distinctive parts to be
@@ -230,14 +231,16 @@ Similarly from the definition of torsion in Eq.~\eqref{tordef}, we find its dist
 \subsection{Bianchi identities\label{sec:bianchi}}
 
 Considering the Bianchi identities for the KK structure described above, we find relevant information about the new fields. Taking the exterior covariant derivative over the $N$-dimensional curvature and torsion, the Bianchi identities are
-\begin{align*}
-  \hat{\text{D}}\hat{R}^{AB} &= 0 &\mbox{and}& &\hat{\text{D}}\hat{T}^A &= \hat{R}^A_{\ \ B}\wedge\hat{e}^B.
-\end{align*}
+\begin{equation}
+  \hat{\text{D}}\hat{R}^{AB} = 0 \quad \text{and} \quad \hat{\text{D}}\hat{T}^A = \hat{R}^A_{\ \ B}\wedge\hat{e}^B.
+\end{equation}
 A careful decomposition of the first one into its distinctive parts, gives the Bianchi identity for the curvature of the reduced spacetime, together with the second derivative rules
-\begin{align*}
-  \text{D}R^{ab} &=0, & \text{D}\mbox{D}\alpha^{ab} &=R^a_{\ \ l}\alpha^{lb}+R^b_{\ \ l}\alpha^{al},\\
-  \text{D}\text{D}\beta^a &= R^a_{\ \ b}\beta^{b}, & \text{D}\text{D}\gamma^a &= R^a_{\ \ b}\gamma^{b}.
-\end{align*}
+\begin{equation}
+  \begin{aligned}
+    \text{D}R^{ab} &=0, & \text{D}\mbox{D}\alpha^{ab} &=R^a_{\ \ l}\alpha^{lb}+R^b_{\ \ l}\alpha^{al},\\
+    \text{D}\text{D}\beta^a &= R^a_{\ \ b}\beta^{b}, & \text{D}\text{D}\gamma^a &= R^a_{\ \ b}\gamma^{b}.
+  \end{aligned}
+\end{equation}
 The second Bianchi identity, gives nothing but its equivalent for the manifold $M_{N-1}$, this is
 \begin{equation*}
   \mbox{D}T^a=R^a_{\ \ b}\wedge e^b.
@@ -260,16 +263,16 @@ In five dimensions, the action principle of such a theory is given by
     \wedge\hat{e}^E\Big),
   \end{equation}
   where $\alpha_0$, $\alpha_1$ and $\alpha_2$ are dimensionful coupling constants. Its variation with respect to the five-dimensional vielbein and spin connection give the equations
-  \begin{align}
+  \begin{gather}
     \label{delta e}
     \hat{\epsilon}_{ABCDE}\Big(\alpha_0\hat{e}^A\wedge\hat{e}^B\wedge\hat{e}^C\wedge\hat{e}^D
     + \alpha_1\hat{R}^{AB}\wedge\hat{e}^C\wedge\hat{e}^D
-    + \alpha_2\hat{R}^{AB}\wedge\hat{R}^{CD}\Big)&=0,
+    + \alpha_2\hat{R}^{AB}\wedge\hat{R}^{CD}\Big)=0,
     \\
     \label{delta w}
     \hat{\epsilon}_{ABCDE}\Big(\alpha_1\hat{e}^C\wedge\hat{e}^D+
-    2\alpha_2\hat{R}^{CD}\Big)\wedge\hat{T}^E&=0.
-  \end{align}
+    2\alpha_2\hat{R}^{CD}\Big)\wedge\hat{T}^E=0.
+  \end{gather}
 \end{widetext}
 
 The last term in Eq.~\eqref{action5EGB} is the five-dimensional Gauss--Bonnet term for a Lorentz curvature written in exterior forms, which is analogue to Eq.~\eqref{GB} for the Riemannian case.
@@ -282,36 +285,60 @@ The Lovelock--Cartan theory in five dimensions allows a unique torsional extensi
 However, it can be written as a boundary term, adding no dynamics to the field equations.
 
 In this work, we will focus on the region in the parameter space where
-\begin{equation}\label{delta}
+\begin{equation}
+  \label{delta}
   \Delta\equiv\alpha_1^2-4\alpha_0\alpha_2\neq 0.
 \end{equation}
 This condition place us outside the Chern--Simons point. Otherwise, the field equations~\eqref{delta e} and~\eqref{delta w} are invariant under a larger gauge group ($AdS_5$), while the action~\eqref{action5EGB} becomes the Chern--Simons form for that group~\cite{Zanelli:2005sa,*Troncoso:1999pk}. 
 
 In terms of the KK ansatz presented in the previous section, the field equations can be decomposed into its distinctive parts, regarding
 its \(M_{4} \times S^1\) decomposition. The Eq.~\eqref{delta e} leads to 
-\begin{align}\label{equation}
-  \epsilon_{abcd}\Big[\alpha_0 e^b\wedge e^c\wedge e^d + \frac{1}{2}\alpha_1\left(M^{bc}-L^b\wedge e^c\right)\wedge e^d&\notag\\
-    -\alpha_2\left(L^b\wedge M^{cd} + K^b\wedge N^{cd}\right)\Big]&=0,\\
-  \epsilon_{abcd}K^b\wedge\left(\alpha_1e^c\wedge e^d + 2\alpha_2M^{cd}\right)&=0,\\
-  \epsilon_{abcd}\big(\alpha_0 e^a\wedge e^b\wedge e^c\wedge e^d&\notag\\
-  +\alpha_1M^{ab}\wedge e^c\wedge e^d+\alpha_2M^{ab}\wedge M^{cd}\big)&=0,\\
-  \epsilon_{abcd}\left(\alpha_1N^{ab}\wedge e^c\wedge e^d+2\alpha_2N^{ab}M^{cd}\right)&=0,
-\end{align}
+\setlength\multlinegap{0pt}
+\begin{gather}
+  \begin{multlined}
+    \label{equation}
+    \epsilon_{abcd}\Big[\alpha_0 e^b\wedge e^c\wedge e^d + \frac{1}{2}\alpha_1\left(M^{bc}-L^b\wedge e^c\right)\wedge e^d\\
+      -\alpha_2\left(L^b\wedge M^{cd} + K^b\wedge N^{cd}\right)\Big]=0,
+  \end{multlined}
+  \\
+  \epsilon_{abcd}K^b\wedge\left(\alpha_1e^c\wedge e^d + 2\alpha_2M^{cd}\right)=0,
+  \\
+  \begin{multlined}
+    \epsilon_{abcd}\big(\alpha_0 e^a\wedge e^b\wedge e^c\wedge e^d \\
+    +\alpha_1M^{ab}\wedge e^c\wedge e^d+\alpha_2M^{ab}\wedge M^{cd}\big)=0,
+  \end{multlined}
+  \\
+  \epsilon_{abcd}\left(\alpha_1N^{ab}\wedge e^c\wedge e^d+2\alpha_2N^{ab}M^{cd}\right)=0,
+\end{gather}
 while Eq.~\eqref{delta w} gives
-\begin{align}
-  \epsilon_{abcd}\Big[\alpha_1\left(e^c\wedge e^d\wedge Z-2e^c\wedge T^d\right)
-    +2\alpha_2\Big(N^{cd}\wedge W&\notag\\
-    +M^{cd}\wedge Z+2L^c\wedge T^d
-    +2K^c\wedge V^d\Big)\Big]&=0,\\
-  \epsilon_{abcd}\left[\alpha_1e^c\wedge e^ d\wedge W+2\alpha_2\left(M^{cd}\wedge W+2K^c\wedge T^d\right)\right]&=0,\\
-  \epsilon_{abcd}\left(\alpha_1e^b\wedge e^c+2\alpha_2M^{bc}\right)\wedge T^d&=0,\\
-  \epsilon_{abcd}\left[\alpha_1e^b\wedge e^c\wedge V^d+2\alpha_2\Big(M^{bc}\wedge V^d+N^{bc}\wedge T^d\Big)\right]&=0.
-\end{align}
+\setlength\multlinegap{0pt}
+\begin{gather}
+  \begin{multlined}
+    \epsilon_{abcd}\Bigl[\alpha_1\left(e^c\wedge e^d\wedge Z-2e^c\wedge T^d\right)
+      +2\alpha_2\big(N^{cd}\wedge W\\
+      +M^{cd}\wedge Z+2L^c\wedge T^d
+      +2K^c\wedge V^d\big)\Bigr]=0,
+  \end{multlined}
+  \\
+  \begin{multlined}
+    \epsilon_{abcd}\Bigl[\alpha_1e^c\wedge e^ d\wedge W \\
+      + 2\alpha_2\left(M^{cd}\wedge W+2K^c\wedge T^d\right)\Bigr]=0,
+  \end{multlined}
+  \\
+  \epsilon_{abcd}\left(\alpha_1e^b\wedge e^c+2\alpha_2M^{bc}\right)\wedge T^d=0,
+  \\
+  \begin{multlined}
+    \epsilon_{abcd}\Bigl[\alpha_1e^b\wedge e^c\wedge V^d \\
+      + 2\alpha_2\big(M^{bc}\wedge V^d+N^{bc}\wedge T^d\big)\Bigr]=0.
+  \end{multlined}
+\end{gather}
 The fields $M^{ab}$, $N^{ab}$, $L^a$, $K^a$, $W$, $V^a$ and $Z$ are defined from the Eq.~\eqref{R1} to~\eqref{T2}, such that
-\begin{align*}
-  \hat{R}^{ab}&=M^{ab}+N^{ab}\wedge\hat{e}^5, & \hat{R}^{5a}&=K^a+L^a\wedge\hat{e}^5,\\
-  \hat{T}^a&=T^a+V^a\wedge\hat{e}^5, & \hat{T}^5&=W+Z\wedge\hat{e}^5.
-\end{align*}
+\begin{equation}
+  \begin{aligned}
+    \hat{R}^{ab}&=M^{ab}+N^{ab}\wedge\hat{e}^5, & \hat{R}^{5a}&=K^a+L^a\wedge\hat{e}^5,\\
+    \hat{T}^a&=T^a+V^a\wedge\hat{e}^5, & \hat{T}^5&=W+Z\wedge\hat{e}^5.
+  \end{aligned}
+\end{equation}
 
 
 \section{Dimensionally Reduced Lovelock--Cartan Cosmology\label{cosmos}}
@@ -321,11 +348,13 @@ The fields $M^{ab}$, $N^{ab}$, $L^a$, $K^a$, $W$, $V^a$ and $Z$ are defined from
 In order to look for cosmological solutions, we demand the symmetries assumed by the cosmological principle, i.e. isotropy and homogeneity of the involved fields. This can be achieved by imposing the Lie derivative of each field along the Killing vectors which generates the symmetries, to vanish. Appendix~\ref{homotropic} is devoted to the details of how to find the general ansatz.
 
 The four-dimensional vielbein compatible with the Friedmann--Robertson--Walker metric is determined only by one function, the scale factor $a(t)$, and their components read
-\begin{align}
-  \label{vielbein cosmo}
-  e^0&=\mbox{d}t, & e^1&=\frac{a(t)}{\sqrt{1-kr^2}}\mbox{d}r,\\
-  e^2&=a(t)r\mbox{d}\theta, & e^3&=a(t)r\sin\varphi\mbox{d}\varphi, 
-\end{align}
+\begin{equation}
+  \begin{aligned}
+    \label{vielbein cosmo}
+    e^0&=\mbox{d}t, & e^1&=\frac{a(t)}{\sqrt{1-kr^2}} \, \mbox{d}r,\\
+    e^2&=a(t)r \, \mbox{d}\theta, & e^3&=a(t) r \sin(\varphi) \,\mbox{d}\varphi, 
+  \end{aligned}
+\end{equation}
 where $k=+1,0,-1$ determines the extrinsic curvature of the four-dimensional manifold to be closed, flat or open, respectively. 
 
 The scalar field is a time-dependent function, 
@@ -336,66 +365,81 @@ which is interpreted as the scale factor of the compact extra dimension.
 
 On the other hand, the spin connection adds two functions that we called $\omega(t)$ and $f(t)$,
 \begin{align}
-  \omega^{0i}&=\omega(t) e^i,\\
-  \omega^{12}&=-\frac{\sqrt{1-kr^2}}{a(t)r}e^2-f(t)e^3,\\
-  \omega^{13}&=-\frac{\sqrt{1-kr^2}}{a(t)r}e^3+f(t)e^2,\\
-  \omega^{23}&=-\frac{\cot\theta}{a(t)r}e^3-f(t)e^1.
+  \omega^{0i}&=\omega(t) \, e^i,\\
+  \omega^{12}&=-\frac{\sqrt{1-kr^2}}{a(t)r} \, e^2 - f(t) \, e^3,\\
+  \omega^{13}&=-\frac{\sqrt{1-kr^2}}{a(t)r} \, e^3 + f(t) \, e^2,\\
+  \omega^{23}&=-\frac{\cot\theta}{a(t)r} \, e^3 - f(t) \, e^1.
 \end{align}
 
 The nonvanishing components of the spin connection induced by the compact manifold are
-\begin{align}
-  \beta^0=-b(t)e^0,&\ \beta^i=\beta(t)e^i,\\
+\begin{gather}
+  \beta^0 = -b(t) \, e^0,\quad \beta^i = \beta(t) \, e^i,\\
   \label{gamma cosmo}
-  \gamma^0&=-\gamma(t).
-\end{align}
+  \gamma^0 =-\gamma(t).
+\end{gather}
 
 The $1$-form $A$ is $A(t)\text{d}t$, has vanishing field strength $F$. Thus, without loss of generality, it can be fixed to zero by means of an $U(1)$ gauge transformation or, equivalently, a diffeomorphism transformation along the $z$-direction.
 
 The equations of motion for the cosmological ansatz give a system of differential equations for the time-dependent functions defined above. Curvature and torsion for this ansatz can be seen in Appendix~\ref{homotropic}. We find that the only non-Riemannian branch demands  $\beta^a=0$. Thus $b(t)=\beta(t)=0$. Otherwise, the system is consistent only at the Chern--Simons point, where it degenerates. 
 
 The final set of equations is the following:
-\begin{align}
+\setlength\multlinegap{0pt}
+\begin{gather}
   \label{eqn1}
-  h\left[\alpha_1+2\alpha_2\left(\omega^2+\frac{k}{a^2}-f^2\right)\right]+4\alpha_2f\left(\dot{f}+Hf\right)&=0,\\
-  2\alpha_0+\alpha_1\left(\dot{\omega}+2\omega^2+\frac{k}{a^2}-f^2\right)\notag\\
-  +2\alpha_2\left(\dot{\omega}+\omega^2\right)\left(\omega^2+\frac{k}{a^2}-f^2\right)&=0,\\
-  2\alpha_2\left(\frac{\dot{\phi}}{2\phi}+\gamma\right)f\left(\dot{f}+Hf\right)
-  +h^2\left(\alpha_1-2\alpha_2\omega\gamma\right)&=0,\\
-  \omega\left(\frac{\dot{\phi}}{2\phi}+\gamma\right)+\dot{\gamma}+\frac{\dot{\phi}}{2\phi}\gamma-\frac{\alpha_1}{2\alpha_2}&=0,\\
-  \left(\omega^2+\frac{k}{a^2}-f^2\right)\left(\alpha_1-2\alpha_2\omega\gamma\right)-\alpha_1\omega\gamma+2\alpha_0&=0,\\
+  \begin{multlined}
+    h\left[\alpha_1+2\alpha_2\left(\omega^2+\frac{k}{a^2}-f^2\right)\right] \\
+    +4\alpha_2f\left(\dot{f}+Hf\right)=0,
+  \end{multlined}
+  \\
+  \begin{multlined}
+    2\alpha_0+\alpha_1\left(\dot{\omega}+2\omega^2+\frac{k}{a^2}-f^2\right)\\
+    +2\alpha_2\left(\dot{\omega}+\omega^2\right)\left(\omega^2+\frac{k}{a^2}-f^2\right)=0,
+  \end{multlined}
+  \\
+  2\alpha_2\left(\tfrac{\dot{\phi}}{2\phi}+\gamma\right)f\left(\dot{f}+Hf\right)
+  +h^2\left(\alpha_1-2\alpha_2\omega\gamma\right)=0,
+  \\
+  \omega\left(\frac{\dot{\phi}}{2\phi}+\gamma\right)+\dot{\gamma}+\frac{\dot{\phi}}{2\phi}\gamma-\frac{\alpha_1}{2\alpha_2}=0,
+  \\
+  \left(\omega^2+\tfrac{k}{a^2}-f^2\right)\left(\alpha_1-2\alpha_2\omega\gamma\right)-\alpha_1\omega\gamma+2\alpha_0=0,
+  \\
   \label{eqn2}
   \left(\dot{\omega}+\omega^2\right)\left(\alpha_1-2\alpha_2\omega\gamma\right)-\alpha_1
-  \omega\gamma+3\alpha_0-\frac{\alpha^2_1}{4\alpha_2}&=0,
-\end{align}
+  \omega\gamma+3\alpha_0 - \frac{\alpha^2_1}{4\alpha_2}=0,
+\end{gather}
 where dot stands for time-derivative. For the sake of simplicity, we have defined $h(t)=\omega(t)-H(t)$, where $H=\dot{a}/a$ is the Hubble function.
 
 \subsection{Solutions}
 
 The system is integrated and develops two non-Riemannian branches, one for each value of the parameter $u_\pm$ defined to be
-\begin{equation}\label{u}
+\begin{equation}
+  \label{u}
   u_\pm=\frac{2\alpha_1\pm\sqrt{6\Delta}}{4\alpha_2},
 \end{equation}
 where $\Delta$ was given in Eq.~\eqref{delta}.
 
 The Eqs.~\eqref{eqn1} to~\eqref{eqn2} are reduced to the Riemannian system when \mbox{$f=h=0$} and \mbox{$\gamma=-\dot{\phi}/2\phi$}. The details of such a model can be seen in Refs.~\cite{Deruelle:1986iv,Deruelle:2003ck,Henriques:1986jw,*Ishihara:1986if,Kleidis:1997mu}.
 
-Due to Eq.~\eqref{u}, the solutions will be valid in the region of the parameter space where $\Delta>0$. The function $\omega(t)$ satisfies the equation
-\begin{align}
-  \dot{\omega}+\omega^2+u_{\pm} &= 0,
-\end{align}
-which, for the three significantly different values of $u_\pm$, has the following solutions
-\begin{align}
-  u_\pm>0&:\omega(t)=-\sqrt{u_\pm}\tan\left[\sqrt{u_\pm}\left(t-t_0\right)\right],\\
-  u_\pm=0&:\omega(t)=\left(t-t_0\right)^{-1},\\
-  u_\pm<0&:\omega(t)=\sqrt{-u_\pm}\tanh\left[\sqrt{-u_\pm}\left(t-t_0\right)\right],
-\end{align}
+Due to Eq.~\eqref{u}, the solutions will be valid in the region of the parameter space where $\Delta>0$. The function $\omega(t)$ satisfies the equation\footnote{Notice that in our choice of parameters $u_+$ cannot vanish.}
+\begin{equation}
+  \dot{\omega}+\omega^2+u_{\pm} = 0,
+\end{equation}
+which, for the three significantly different values of $u_\pm$, has the following solutions\footnote{Notice that in our choice of parameters $u_+$ cannot vanish.}
+\begin{equation}
+  \omega(t) =
+  \begin{cases}
+    -\sqrt{u_\pm}\tan\left[\sqrt{u_\pm}\left(t-t_0\right)\right] & u_\pm > 0 \\
+    \left(t-t_0\right)^{-1} & u_- = 0 \\
+    \sqrt{-u_\pm}\tanh\left[\sqrt{-u_\pm}\left(t-t_0\right)\right] & u_\pm < 0
+  \end{cases}
+\end{equation}
 where $t_0$ is an integration constant to be fixed. We express the time-dependence of the remaining fields in terms of $\omega$ and list them explicitly in Appendix~\ref{solutions t}. The solutions read
 \begin{align}
   \gamma(\omega)&=\frac{u_\pm}{\omega},\\
   \phi(\omega)&=\frac{\phi_0\,\omega^2}{\omega^2+u_\pm}\exp\left[\frac{\mp\sqrt{6\Delta}}{4\alpha_2\left(\omega^2+u_\pm\right)}\right],\\
   a(\omega)&=\frac{a_0}{\sqrt{\omega^2+u_\pm}}\exp\left[\frac{\pm\sqrt{6\Delta}} {24\alpha_2\left(\omega^2+u_\pm\right)}\right],\\
   f^2(\omega)&=\left(\omega^2+u_\pm\right)\frac{k}{a_0^2}\exp\left[\frac{\mp\sqrt{6\Delta}}{12\alpha_2\left(\omega^2+u_\pm\right)}\right]\notag\\
-  &+\omega^2  + \frac{3\alpha_1\pm\sqrt{6\Delta}}{6\alpha_2},
+  & \quad +\omega^2  + \frac{3\alpha_1\pm\sqrt{6\Delta}}{6\alpha_2},
 \end{align}
 where $a_0$ and $\phi_0$ are integration constants.
 
@@ -553,7 +597,7 @@ There are periods of time where $f^2(t)$ becomes negative. As we can see from Eq
 It couples to the chiral current. For imaginary values of $f(t)$, the corresponding violation of current conservation can be interpreted as particle creation. Similar results where found in~\cite{Toloza:2013wi} for other cosmological model with torsion which shares some of the couplings of a reduced action.
 
 \begin{acknowledgments}
-  The authors would like to thank A.~R.~Zerwekh, I.~Schmidt, N.~A.~Neill, C.~O.~Dib, O.~Miskovic, A.~Toloza and J.~Zanelli for enlightening discussions on this work. O.~C-F. has been partially supported by the PAI project No.~79140040 (CONICYT--Chile). The Centro Cient\'ifico y Tecnol\'ogico de Valpara\'iso (CCTVal) is funded by the Chilean Goverment through the Centers of Excellence Base Financing Program of CONICYT.
+  The authors would like to thank A.~R.~Zerwekh, I.~Schmidt, N.~A.~Neill, C.~O.~Dib, O.~Miskovic, A.~Toloza and J.~Zanelli for enlightening discussions on this work. \mbox{O.~C.-F.} has been partially supported by the PAI project No.~79140040 (CONICYT--Chile). The Centro Cient\'ifico y Tecnol\'ogico de Valpara\'iso (CCTVal) is funded by the Chilean Government through the Centers of Excellence Basal Financing Program of CONICYT.
 \end{acknowledgments}
 %_-----------------------------------------------------------------------------------------
 
