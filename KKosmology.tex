@@ -626,9 +626,10 @@ where $\tilde{R}^{AB}$ is the Riemannian curvature constructed with $\tilde{\ome
 The cosmological principle demands the spatial section of spacetime to be isotropic and homogeneus. This means that the fields involved in the model must be compatible with this assumption. A spacetime is isotropic with respect to certain point $P$ if after a rotation with respect to an axis passing through $P$, all the geometrical properties remain invariant, thus the spacetime looks the same in all directions. Homogeneity is understood such that spacetime looks the same from every point $P$. These two assumptions are translated in the Killing equations, which are the vanishing of the Lie derivatives of the fields along the vectors which generate the symmetries $\{\zeta^\lambda_{i}\}$. In particular the Killing equations for the metric tensor and the torsion tensor are
 \begin{align}
   \label{killing metric}
-  \text{\textsterling}_i g_{\mu\nu}&=\zeta^\lambda_i\partial_\lambda g_{\mu\nu}+\partial_\mu\zeta^\lambda_i g_{\lambda\nu}+\partial_\nu\zeta^\lambda_i g_{\mu\lambda}=0,\\
+  \text{\textsterling}_i g_{\mu\nu}&=\zeta^\lambda_i\partial_\lambda g_{\mu\nu}+\partial_\mu\zeta^\lambda_i g_{\lambda\nu}+\partial_\nu\zeta^\lambda_i g_{\mu\lambda}=0,
+  \\
   \text{\textsterling}_i T^\alpha_{\ \mu\nu}&=\zeta^\lambda_i\partial_\lambda T^\alpha_{\ \mu\nu}-\zeta^\alpha_i\partial_\lambda T^\lambda_{\ \mu\nu}
-  +\zeta^\lambda_i\partial_\mu T^\alpha_{\ \lambda\nu}\notag\\
+  +\zeta^\lambda_i\partial_\mu T^\alpha_{\ \lambda\nu} \notag \\
   &\quad +\zeta^\lambda_i\partial_\nu T^\alpha_{\ \mu\lambda}=0,
 \end{align}
 where $T^\alpha_{\ \mu\nu}$ are the components of the torsion 2-form defined by $T^a=\frac{1}{2}e^a_{\ \alpha}T^\alpha_{\ \mu\nu}\mbox{d}x^\mu\wedge\mbox{d}x^\nu$. The same must hold for the new fields
@@ -643,57 +644,58 @@ and also for the components of $\alpha_{\mu\nu}=-\alpha_{\nu\mu}$, $\beta_{\mu\n
   \beta^a&=E^{a\mu}\beta_{\mu\nu}\mbox{d}x^\nu,\\
   \gamma^a&=E^{a\mu}\gamma_\mu,
 \end{align*} 
-and whose Killing equations are analogous to the tensorial one,~\eqref{killing metric} and vectorial one,~\eqref{killing vector}.
+and whose Killing equations are analogous to the tensorial, Eq.~\eqref{killing metric}, and vectorial one, Eq.~\eqref{killing vector}.
 
-The set of Killing vectors $\{\zeta^\lambda_i\}$ are the generators of $SO(3)$, which generate the spatial rotations in three dimensions, $\xi_i=\epsilon_{ijk}x_j\partial_k$, and the Killing vectors assosiated with spatial translations $\mathcal{P}_i=\sqrt{1-kr^2}\partial_i$, satisfy the algebra
-\begin{align}
-  \left[\xi_i,\xi_j\right]&=\epsilon_{ijk}\xi_k,\\
-  \left[\mathcal{P}_i,\mathcal{P}_j\right]&=-k\epsilon_{ijk}\xi_k,\\
-  \left[\xi_i,\mathcal{P}_j\right]&=\epsilon_{ijk}\xi_k.
-\end{align}
-These requirements on the fields are translated to a set of first order differential equations whose most general solutions determines our ansatz structure from Eq.~\eqref{vielbein cosmo} to \eqref{gamma cosmo}. The field strengths for isotropic--homogeneus vielbein and spin connection are written next. The curvature components are
-\begin{align}
-  R^{0i}&=\left(\dot{\omega}+H\omega\right)e^0\wedge e^i+f\omega\epsilon^i_{\ jk}e^j\wedge e^k,\\
-  R^{ij}&=\left(\omega^2+\frac{k}{a^2}-f^2\right)e^i\wedge e^j
-  -\left(\dot{f}+Hf\right)\epsilon^{ij}_{\ \ k}e^0\wedge e^k,
-\end{align}
+The set of Killing vectors $\{\zeta^\lambda_i\}$ are the generators of $SO(3)$, which generate the spatial rotations in three dimensions, $\mathcal{J}_i=\epsilon_{ijk}x_j\partial_k$, and the Killing vectors assosiated with spatial translations $\mathcal{P}_i=\sqrt{1-kr^2}\partial_i$, satisfy the algebra
+\begin{align*}
+  \left[\mathcal{J}_i,\mathcal{J}_j\right]&=\epsilon_{ijk}\mathcal{J}_k,\\
+  \left[\mathcal{P}_i,\mathcal{P}_j\right]&=-k\epsilon_{ijk}\mathcal{J}_k,\\
+  \left[\mathcal{J}_i,\mathcal{P}_j\right]&=\epsilon_{ijk}\mathcal{P}_k.
+\end{align*}
+These requirements on the fields are translated to a set of first order differential equations whose most general solutions determines our ansatz structure from Eqs.~\eqref{vielbein cosmo} to~\eqref{gamma cosmo}. The field strengths for isotropic--homogeneus vielbein and spin connection are written next. The curvature components are
+\begin{align*}
+  R^{0i}&=\left(\dot{\omega}+H\omega\right) \, e^0\wedge e^i+f\omega\epsilon^i{}_{jk} \, e^j\wedge e^k,\\
+  R^{ij}&=\left(\omega^2+\tfrac{k}{a^2}-f^2\right) \, e^i\wedge e^j
+  -\left(\dot{f}+Hf\right)\epsilon^{ij}{}_{k} \, e^0\wedge e^k,
+\end{align*}
 and the torsion components
 \begin{equation}\label{homotorsion}
-  T^0=0,\quad T^i=-he^0\wedge e^i+f\epsilon^i_{\ jk}e^j\wedge e^k,
+  T^0=0,\quad T^i=-h \, e^0\wedge e^i+f\epsilon^i{}_{jk} \, e^j\wedge e^k,
 \end{equation}
-where $h(t)$ and $H(t)$ were defined in Section \ref{5EGB}.
+where $h(t)$ and $H(t)$ were defined in Sec.~\ref{5EGB}.
 
 \section{Time-dependence of the solutions\label{solutions t}}
 
-We supply here the time-dependent expressions for the cosmological solutions, given the differents values of $u_\pm$, in terms of the dimensionless parameter~$\tau=\sqrt{|u_\pm|}(t-t_0)$.
-\medskip
+We supply here the time-dependent expressions for the cosmological solutions, given the differents values of $u_\pm$, in terms of the dimensionless parameter \mbox{$\tau=\sqrt{|u_\pm|}(t-t_0)$}.
 
-$\bullet\ u_\pm>0$:
-\begin{align}
-  \gamma(t)&=-\sqrt{u_\pm}\cot\tau,\\
-  \phi(t)&=\phi_0\sin^2\tau\exp\left[\frac{\mp\sqrt{6\Delta}}{4\alpha_2 u_\pm}\cos^2\tau\right],\\
-  a(t)&=\frac{a_0}{\sqrt{u_\pm}}|\cos\tau|\exp\left[\frac{\pm\sqrt{6\Delta}}{24\alpha_2 u_\pm}\cos^2\tau\right],\\
-  f^2(t)&=u_\pm\frac{k}{a_0^2}\sec^2\tau\exp\left[\frac{\mp\sqrt{6\Delta}}{12\alpha_2u_\pm}\cos^2\tau\right]\notag\\
-  &+u_\pm\tan^2\tau + \frac{3\alpha_1\pm\sqrt{6\Delta}}{6\alpha_2}.
-\end{align}
+\begin{description}
+\item[$\bm{u_\pm>0}$]
+  \begin{align}
+    \gamma(t)&=-\sqrt{u_\pm}\cot\tau,\\
+    \phi(t)&=\phi_0\sin^2\tau\exp\left[\tfrac{\mp\sqrt{6\Delta}}{4\alpha_2 u_\pm}\cos^2\tau\right],\\
+    a(t)&=\tfrac{a_0}{\sqrt{u_\pm}}|\cos\tau|\exp\left[\tfrac{\pm\sqrt{6\Delta}}{24\alpha_2 u_\pm}\cos^2\tau\right],\\
+    f^2(t)&=u_\pm\tfrac{k}{a_0^2}\sec^2\tau\exp\left[\tfrac{\mp\sqrt{6\Delta}}{12\alpha_2u_\pm}\cos^2\tau\right]\notag\\
+    &+u_\pm\tan^2\tau + \tfrac{3\alpha_1\pm\sqrt{6\Delta}}{6\alpha_2}.
+  \end{align}
 
-$\bullet\ u_\pm=0$:
-\begin{align}
-  \gamma(t)&=0,\\
-  \phi(t)&=\phi_0\exp\left[\frac{\mp\sqrt{6\Delta}}{4\alpha_2}(t-t_0)^2\right],\\
-  a(t)&=a_0|t-t_0|\exp\left[\frac{\pm\sqrt{6\Delta}} {24\alpha_2}(t-t_0)^2\right],\\
-  f^2(t)&=\frac{k}{a_0^2(t-t_0)^2}\exp\left[\frac{\mp\sqrt{6\Delta}}{12\alpha_2}(t-t_0)^2\right]\notag\\
-  &+(t-t_0)^{-2} + \frac{3\alpha_1\pm\sqrt{6\Delta}}{6\alpha_2}.
-\end{align}
+\item[$\bm{u_\pm=0}$]
+  \begin{align}
+    \gamma(t)&=0,\\
+    \phi(t)&=\phi_0\exp\left[\tfrac{\mp\sqrt{6\Delta}}{4\alpha_2}(t-t_0)^2\right],\\
+    a(t)&=a_0|t-t_0|\exp\left[\tfrac{\pm\sqrt{6\Delta}} {24\alpha_2}(t-t_0)^2\right],\\
+    f^2(t)&=\tfrac{k}{a_0^2(t-t_0)^2}\exp\left[\tfrac{\mp\sqrt{6\Delta}}{12\alpha_2}(t-t_0)^2\right]\notag\\
+    &+(t-t_0)^{-2} + \tfrac{3\alpha_1\pm\sqrt{6\Delta}}{6\alpha_2}.
+  \end{align}
 
-$\bullet\ u_\pm<0$:
-\begin{align}
-  \gamma(t)&=-\sqrt{-u_\pm}\coth\tau,\\
-  \phi(t)&=\phi_0\sinh^2\tau\exp\left[\frac{\mp\sqrt{6\Delta}}{4\alpha_2u_\pm}\cosh^2\tau\right],\\
-  a(t)&=\frac{a_0}{\sqrt{-u_\pm}}\cosh\tau\exp\left[\frac{\pm\sqrt{6\Delta}} {24\alpha_2u_\pm}\cosh^2\tau\right],\\
-  f^2(t)&=-u_\pm\frac{k}{a_0^2}\cosh^{-2}\tau\exp\left[\frac{\mp\sqrt{6\Delta}}{12\alpha_2u_\pm}\cosh^2\tau\right]\notag\\
-  &-u_\pm\tanh^2\tau + \frac{3\alpha_1\pm\sqrt{6\Delta}}{6\alpha_2}.
-\end{align}
+\item[$\bm{u_\pm<0}$]
+  \begin{align}
+    \gamma(t)&=-\sqrt{-u_\pm}\coth\tau,\\
+    \phi(t)&=\phi_0\sinh^2\tau\exp\left[\tfrac{\mp\sqrt{6\Delta}}{4\alpha_2u_\pm}\cosh^2\tau\right],\\
+    a(t)&=\tfrac{a_0}{\sqrt{-u_\pm}}\cosh\tau\exp\left[\tfrac{\pm\sqrt{6\Delta}} {24\alpha_2u_\pm}\cosh^2\tau\right],\\
+    f^2(t)&=-u_\pm\tfrac{k}{a_0^2}\cosh^{-2}\tau\exp\left[\tfrac{\mp\sqrt{6\Delta}}{12\alpha_2u_\pm}\cosh^2\tau\right]\notag\\
+    &-u_\pm\tanh^2\tau + \tfrac{3\alpha_1\pm\sqrt{6\Delta}}{6\alpha_2}.
+  \end{align}
+\end{description}
 %%%%%%%%% BIBLIOGRAPHY %%%%%%%%%
 %%\bibliographystyle{apsrev4-1}
 \bibliography{References.bib}
